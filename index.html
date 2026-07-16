@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FR+: The Anchor Model</title>
+
+<!-- SEO -->
+<meta name="description" content="FR+ builds portfolios on halo assets: farmland, machinery, infrastructure. Physical, productive, asset-backed. FSCA regulated. R100k+ capital floor.">
+<meta name="theme-color" content="#4B3B7C">
+<!-- REPLACE the two URLs below with your live FR+ domain before you point DNS at it -->
+<link rel="canonical" href="https://REPLACE-WITH-FRPLUS-DOMAIN/">
+<meta property="og:url" content="https://REPLACE-WITH-FRPLUS-DOMAIN/">
+
+<!-- Open Graph (WhatsApp / LinkedIn / Facebook preview card) -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="FR+">
+<meta property="og:title" content="FR+: The Anchor Model">
+<meta property="og:description" content="While paper assets chase the next cycle, halo assets keep working. Physical, productive, built to outlast the trends around them.">
+<meta property="og:image" content="https://REPLACE-WITH-FRPLUS-DOMAIN/og-frplus.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="FR+: The Anchor Model">
+<meta name="twitter:description" content="Physical, productive, asset-backed. Built to outlast the trends around them.">
+<meta name="twitter:image" content="https://REPLACE-WITH-FRPLUS-DOMAIN/og-frplus.png">
+
+<!-- Favicon (inline SVG, no extra file needed) -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%234B3B7C'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='17' font-weight='600' fill='%23FCFBF8' text-anchor='middle'%3EF%3C/text%3E%3C/svg%3E">
+
+<!-- Fonts: preconnect + link (parallel fetch, not render-blocking @import) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600&family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap">
+
+<!-- Meta Pixel. Replace REPLACE-WITH-META-PIXEL-ID (2 places) with your pixel ID. -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window,document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init','REPLACE-WITH-META-PIXEL-ID');
+  fbq('track','PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=REPLACE-WITH-META-PIXEL-ID&ev=PageView&noscript=1"/></noscript>
+<!-- End Meta Pixel -->
+
+<style>
+
+  :root{
+    --violet:#4B3B7C;
+    --violet-deep:#372C5C;
+    --violet-soft:#EDE9F7;
+    --paper:#FCFBF8;
+    --paper-2:#F5F3EE;
+    --ink:#1C1B22;
+    --ink-dim:#605C6E;
+    --green:#2F7A4F;
+    --rust:#C1552C;
+    --mist:#F1EEF9;
+    --line: rgba(75,59,124,0.14);
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Space Grotesk',sans-serif;
+    overflow-x:hidden;
+  }
+  ::selection{background:var(--violet);color:var(--paper);}
+  .display{font-family:'Fraunces',serif; font-optical-sizing:auto;}
+  .mono{font-family:'JetBrains Mono',monospace;}
+  a{color:inherit;text-decoration:none;}
+  .wrap{max-width:1240px;margin:0 auto;padding:0 40px;}
+  @media(max-width:768px){.wrap{padding:0 22px;}}
+
+  .eyebrow{
+    font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.22em;text-transform:uppercase;
+    color:var(--violet); display:flex;align-items:center;gap:10px;
+  }
+  .eyebrow::before{content:"";width:22px;height:1px;background:var(--violet);}
+
+  /* NAV */
+  nav{
+    position:fixed;top:0;left:0;right:0;z-index:50;
+    display:flex;align-items:center;justify-content:space-between;
+    padding:26px 40px;
+    background:rgba(252,251,248,0.86);backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .logo{font-family:'Fraunces',serif;font-weight:600;font-size:22px;letter-spacing:0.01em;color:var(--ink);}
+  .logo span{color:var(--violet);}
+  .fsp-badge{
+    font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.08em;
+    border:1px solid var(--line);padding:7px 14px;border-radius:100px;color:var(--ink-dim);background:var(--paper);
+  }
+  @media(max-width:640px){nav{padding:20px 22px;}}
+
+  /* HERO */
+  .hero{
+    position:relative;min-height:100vh;
+    display:flex;flex-direction:column;justify-content:center;
+    padding-top:110px;padding-bottom:80px;
+    background:
+      radial-gradient(ellipse 1000px 560px at 80% 10%, var(--violet-soft), transparent 60%),
+      radial-gradient(ellipse 800px 600px at 8% 90%, rgba(47,122,79,0.08), transparent 65%),
+      var(--paper);
+    overflow:hidden;
+  }
+  .hero::before{
+    content:"";position:absolute;inset:0;
+    background-image: linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px);
+    background-size:64px 64px;
+    mask-image:radial-gradient(ellipse 900px 700px at 72% 25%, black, transparent 72%);
+    opacity:0.6;
+  }
+  .hero-inner{position:relative;z-index:2;}
+  .hero h1{
+    font-size:clamp(46px,7vw,100px);line-height:1.0;font-weight:500;letter-spacing:-0.01em;
+    max-width:900px;margin-top:26px;color:var(--ink);
+  }
+  .hero h1 em{font-style:normal;color:var(--violet);}
+  .hero-sub{max-width:520px;margin-top:26px;font-size:18px;line-height:1.6;color:var(--ink-dim);}
+  .hero-tags{display:flex;gap:12px;margin-top:36px;flex-wrap:wrap;}
+  .tag{
+    font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.05em;
+    border:1px solid var(--line);padding:9px 16px;border-radius:100px;color:var(--ink);
+    display:flex;align-items:center;gap:8px;background:var(--paper);
+  }
+  .tag::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--green);}
+  .cta-row{margin-top:44px;display:flex;gap:20px;align-items:center;flex-wrap:wrap;}
+  .btn-primary{
+    background:var(--violet);color:#fff;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:15px;
+    padding:17px 30px;border-radius:6px;border:none;cursor:pointer;
+    box-shadow:0 14px 30px -12px rgba(75,59,124,0.45);
+    transition:transform .25s ease, background .25s ease, box-shadow .25s ease;
+    display:inline-flex;align-items:center;gap:10px;
+  }
+  .btn-primary:hover{transform:translateY(-2px);background:var(--violet-deep);box-shadow:0 18px 34px -10px rgba(75,59,124,0.55);}
+  .btn-ghost{font-family:'Space Grotesk',sans-serif;font-size:15px;color:var(--ink-dim);border-bottom:1px solid var(--line);padding-bottom:3px;transition:color .2s,border-color .2s;}
+  .btn-ghost:hover{color:var(--ink);border-color:var(--violet);}
+
+  .scroll-cue{position:absolute;bottom:36px;left:40px;font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--ink-dim);display:flex;align-items:center;gap:10px;letter-spacing:0.1em;}
+  .scroll-cue .line{width:1px;height:34px;background:linear-gradient(var(--violet),transparent);animation:pulse 2s ease-in-out infinite;}
+  @keyframes pulse{0%,100%{opacity:.25}50%{opacity:1}}
+
+  section{padding:120px 0;position:relative;}
+  @media(max-width:768px){section{padding:80px 0;}}
+  .section-head{max-width:640px;margin-bottom:60px;}
+  .section-head h2{font-size:clamp(30px,4vw,44px);font-weight:500;margin-top:16px;line-height:1.1;color:var(--ink);}
+  .section-head p{margin-top:16px;color:var(--ink-dim);font-size:16.5px;line-height:1.65;max-width:520px;}
+
+  /* MAP */
+  .map-section{background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .map-layout{display:grid;grid-template-columns:1fr 1.3fr;gap:60px;align-items:center;}
+  @media(max-width:900px){.map-layout{grid-template-columns:1fr;}}
+  .map-stage{position:relative;}
+  .sa-outline{width:100%;height:auto;display:block;overflow:visible;}
+  .sa-fill{fill:none;stroke:rgba(75,59,124,0.22);stroke-width:1.2;}
+  .sa-facets{fill:rgba(75,59,124,0.05);stroke:rgba(75,59,124,0.10);stroke-width:0.6;}
+  .pin{cursor:pointer;}
+  .pin circle.core{fill:var(--violet);}
+  .pin circle.ring{fill:none;stroke:var(--violet);stroke-width:1.4;opacity:0.55;transform-origin:center;animation:ringpulse 2.6s ease-out infinite;}
+  .pin.active circle.core{fill:var(--rust);}
+  @keyframes ringpulse{0%{transform:scale(0.5);opacity:0.8;}100%{transform:scale(2.6);opacity:0;}}
+
+  .spec-card{
+    background:#fff;border:1px solid var(--line);border-radius:10px;padding:32px 34px;min-height:280px;
+    display:flex;flex-direction:column;justify-content:center;
+    box-shadow:0 20px 44px -28px rgba(75,59,124,0.30);
+  }
+  .spec-card .region{font-family:'Fraunces',serif;font-size:26px;color:var(--violet);margin-top:8px;}
+  .spec-row{display:flex;justify-content:space-between;padding:13px 0;border-bottom:1px solid var(--line);font-size:14.5px;}
+  .spec-row:last-child{border-bottom:none;}
+  .spec-row .k{color:var(--ink-dim);}
+  .spec-row .v{font-family:'JetBrains Mono',monospace;color:var(--ink);}
+  .spec-hint{font-size:13px;color:var(--ink-dim);margin-top:20px;font-family:'JetBrains Mono',monospace;letter-spacing:0.03em;}
+
+  /* COMPARISON */
+  .compare-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:12px;overflow:hidden;}
+  @media(max-width:768px){.compare-grid{grid-template-columns:1fr;}}
+  .compare-col{background:#fff;padding:44px 40px;}
+  .compare-col.new{background:linear-gradient(165deg, var(--violet-soft), #fff 60%);}
+  .compare-label{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--ink-dim);}
+  .compare-col.new .compare-label{color:var(--violet);}
+  .compare-col h3{font-family:'Fraunces',serif;font-size:24px;font-weight:500;margin-top:14px;margin-bottom:26px;color:var(--ink);}
+  .compare-item{display:flex;gap:14px;padding:13px 0;font-size:15px;line-height:1.5;color:var(--ink-dim);}
+  .compare-col.new .compare-item{color:var(--ink);}
+  .mark{flex-shrink:0;width:18px;height:18px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;margin-top:2px;}
+  .mark.x{border:1px solid #C9C2D8;color:#9891AC;}
+  .mark.check{background:var(--green);color:#fff;}
+
+  /* CALCULATOR */
+  .calc-panel{
+    background:#fff;border:1px solid var(--line);border-radius:14px;padding:52px;
+    display:grid;grid-template-columns:1fr 1fr;gap:56px;
+    box-shadow:0 24px 60px -36px rgba(75,59,124,0.28);
+  }
+  @media(max-width:800px){.calc-panel{grid-template-columns:1fr;padding:32px 26px;}}
+  .field{margin-bottom:34px;}
+  .field label{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:var(--ink-dim);display:block;margin-bottom:14px;}
+  .slider-value{font-family:'Fraunces',serif;font-size:38px;color:var(--violet);}
+  input[type=range]{width:100%;height:2px;background:var(--line);appearance:none;margin-top:16px;border-radius:2px;}
+  input[type=range]::-webkit-slider-thumb{appearance:none;width:18px;height:18px;border-radius:50%;background:var(--violet);border:3px solid #fff;cursor:pointer;box-shadow:0 0 0 1px var(--violet);}
+  .range-labels{display:flex;justify-content:space-between;font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--ink-dim);margin-top:8px;}
+  .output-box{background:var(--mist);border:1px solid var(--line);border-radius:10px;padding:30px;display:flex;flex-direction:column;justify-content:center;}
+  .output-label{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:var(--violet);}
+  .output-value{font-family:'Fraunces',serif;font-size:44px;margin-top:12px;line-height:1;color:var(--ink);}
+  .output-note{font-size:13px;color:var(--ink-dim);margin-top:14px;line-height:1.5;}
+
+  /* ANCHOR */
+  .anchor-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:12px;overflow:hidden;margin-top:56px;}
+  @media(max-width:800px){.anchor-grid{grid-template-columns:1fr;}}
+  .anchor-card{background:#fff;padding:38px 32px;}
+  .anchor-num{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--violet);}
+  .anchor-card h4{font-family:'Fraunces',serif;font-size:21px;font-weight:500;margin-top:16px;margin-bottom:12px;color:var(--ink);}
+  .anchor-card p{font-size:14.5px;color:var(--ink-dim);line-height:1.6;}
+
+  footer{border-top:1px solid var(--line);padding:56px 0 40px;background:var(--paper-2);}
+  .footer-legal{font-family:'JetBrains Mono',monospace;font-size:11.5px;color:var(--ink-dim);line-height:1.7;max-width:820px;}
+  .footer-legal b{color:var(--ink);}
+
+  /* sub-brand strip */
+  .subbrand-strip{display:flex;gap:16px;margin-top:36px;flex-wrap:wrap;}
+  .subbrand{display:flex;align-items:center;gap:10px;font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--ink-dim);}
+  .subbrand .dot{width:9px;height:9px;border-radius:50%;}
+  .subbrand.inv .dot{background:var(--rust);}
+  .subbrand.ins .dot{background:var(--green);}
+
+  /* SHARED CTA */
+  .section-cta{margin-top:44px;}
+
+  /* LEAD FORM */
+  .apply-section{background:var(--violet-deep);color:var(--paper);border-top:1px solid var(--line);}
+  .apply-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start;}
+  @media(max-width:900px){.apply-grid{grid-template-columns:1fr;gap:40px;}}
+  .apply-copy .eyebrow{color:#B9A8E8;}
+  .apply-copy .eyebrow::before{background:#B9A8E8;}
+  .apply-copy h2{font-family:'Fraunces',serif;font-size:clamp(30px,4vw,46px);font-weight:500;line-height:1.08;margin-top:16px;color:#fff;}
+  .apply-copy p{margin-top:20px;color:#CFC7E4;font-size:16.5px;line-height:1.65;max-width:460px;}
+  .apply-points{margin-top:30px;display:flex;flex-direction:column;gap:14px;}
+  .apply-point{display:flex;gap:12px;align-items:flex-start;font-size:15px;color:#E6E0F2;}
+  .apply-point .tick{flex-shrink:0;width:20px;height:20px;border-radius:50%;background:var(--green);color:#fff;display:flex;align-items:center;justify-content:center;font-size:11px;margin-top:1px;}
+  .form-card{background:var(--paper);border-radius:16px;padding:40px;box-shadow:0 30px 70px -30px rgba(0,0,0,0.5);}
+  @media(max-width:520px){.form-card{padding:28px 22px;}}
+  .form-head{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:var(--violet);}
+  .form-card h3{font-family:'Fraunces',serif;font-size:25px;font-weight:500;color:var(--ink);margin-top:10px;margin-bottom:6px;}
+  .form-sub{font-size:13px;color:var(--ink-dim);margin-bottom:26px;line-height:1.5;}
+  .fld{margin-bottom:18px;}
+  .fld label{display:block;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.06em;text-transform:uppercase;color:var(--ink-dim);margin-bottom:8px;}
+  .fld label .req{color:var(--rust);}
+  .fld input,.fld select{
+    width:100%;padding:14px 16px;border:1px solid var(--line);border-radius:8px;background:#fff;
+    font-family:'Space Grotesk',sans-serif;font-size:15px;color:var(--ink);transition:border-color .18s, box-shadow .18s;
+  }
+  .fld input:focus,.fld select:focus{outline:none;border-color:var(--violet);box-shadow:0 0 0 3px rgba(75,59,124,0.12);}
+  .fld input::placeholder{color:#A9A2B8;}
+  .consent{display:flex;gap:11px;align-items:flex-start;margin:8px 0 22px;font-size:12.5px;color:var(--ink-dim);line-height:1.5;cursor:pointer;}
+  .consent input{width:17px;height:17px;margin-top:2px;flex-shrink:0;accent-color:var(--violet);}
+  .form-submit{
+    width:100%;background:var(--violet);color:#fff;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:16px;
+    padding:17px;border:none;border-radius:8px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;
+    transition:transform .2s, background .2s, box-shadow .2s;box-shadow:0 14px 30px -12px rgba(75,59,124,0.5);
+  }
+  .form-submit:hover{transform:translateY(-2px);background:var(--violet-deep);}
+  .form-submit:disabled{opacity:0.6;cursor:not-allowed;transform:none;}
+  .form-foot{font-family:'JetBrains Mono',monospace;font-size:10.5px;color:var(--ink-dim);text-align:center;margin-top:14px;letter-spacing:0.03em;}
+  .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;}
+  .form-msg{display:none;font-size:14px;line-height:1.5;padding:14px 16px;border-radius:8px;margin-top:14px;}
+  .form-msg.err{display:block;background:#FBEDE9;border:1px solid rgba(193,85,44,0.4);color:#8A3C1E;}
+  .form-success{display:none;text-align:center;padding:20px 0;}
+  .form-success .big{font-family:'Fraunces',serif;font-size:26px;color:var(--violet);margin-bottom:10px;}
+  .form-success p{font-size:14.5px;color:var(--ink-dim);line-height:1.6;}
+  .form-success .tickcirc{width:52px;height:52px;border-radius:50%;background:var(--green);color:#fff;display:flex;align-items:center;justify-content:center;font-size:24px;margin:0 auto 18px;}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">FR<span>+</span></div>
+  <div class="fsp-badge">FSP 53986</div>
+</nav>
+
+<section class="hero">
+  <div class="hero-inner wrap">
+    <div class="eyebrow">The Anchor Model</div>
+    <h1 class="display">Capital that stays<br><em>anchored</em> to something real.</h1>
+    <p class="hero-sub">While paper assets chase the next cycle, halo assets keep working: farmland, machinery, infrastructure. Physical, productive, and built to outlast the trends around them.</p>
+    <div class="hero-tags">
+      <div class="tag">Asset-backed structuring</div>
+      <div class="tag">R100k+ capital floor</div>
+      <div class="tag">FSCA regulated</div>
+    </div>
+    <div class="cta-row">
+      <a href="#apply" class="btn-primary cta-to-form">Get your free projection →</a>
+      <a href="#map" class="btn-ghost">Or see where it sits first ↓</a>
+    </div>
+    <div class="subbrand-strip">
+      <div class="subbrand inv"><span class="dot"></span>FR INVESTMENT</div>
+      <div class="subbrand ins"><span class="dot"></span>FR INSURANCE</div>
+    </div>
+  </div>
+  <div class="scroll-cue"><div class="line"></div>SCROLL</div>
+</section>
+
+<section class="map-section" id="map">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Signature moment</div>
+      <h2 class="display">See exactly where<br>your capital would sit.</h2>
+      <p>Not a promise on a page. Real regions, real asset categories. Hover a marker.</p>
+    </div>
+    <div class="map-layout">
+      <div class="map-stage">
+        <svg class="sa-outline" viewBox="0 0 420 380" id="saMap">
+          <g class="sa-facets"><polygon points="60,60 180,40 260,70 340,90 380,150 350,220 300,280 220,330 140,310 80,260 40,180 30,110" /></g>
+          <g class="sa-fill">
+            <polygon points="60,60 180,40 260,70 340,90 380,150 350,220 300,280 220,330 140,310 80,260 40,180 30,110" />
+            <line x1="60" y1="60" x2="180" y2="40"/><line x1="180" y1="40" x2="260" y2="70"/>
+            <line x1="260" y1="70" x2="340" y2="90"/><line x1="340" y1="90" x2="380" y2="150"/>
+            <line x1="380" y1="150" x2="350" y2="220"/><line x1="350" y1="220" x2="300" y2="280"/>
+            <line x1="300" y1="280" x2="220" y2="330"/><line x1="220" y1="330" x2="140" y2="310"/>
+            <line x1="140" y1="310" x2="80" y2="260"/><line x1="80" y1="260" x2="40" y2="180"/>
+            <line x1="40" y1="180" x2="30" y2="110"/><line x1="30" y1="110" x2="60" y2="60"/>
+          </g>
+          <g class="pin active" data-region="gauteng" transform="translate(220,150)"><circle class="ring" r="8"/><circle class="core" r="5"/></g>
+          <g class="pin" data-region="freestate" transform="translate(190,220)"><circle class="ring" r="8"/><circle class="core" r="5"/></g>
+          <g class="pin" data-region="mpumalanga" transform="translate(290,140)"><circle class="ring" r="8"/><circle class="core" r="5"/></g>
+          <g class="pin" data-region="westerncape" transform="translate(150,290)"><circle class="ring" r="8"/><circle class="core" r="5"/></g>
+        </svg>
+      </div>
+      <div class="spec-card" id="specCard">
+        <div class="eyebrow">Asset region 01 / 04</div>
+        <div class="region" id="specRegion">Gauteng</div>
+        <div class="spec-row"><span class="k">Asset class</span><span class="v" id="specClass">Farmland &amp; agri-infrastructure</span></div>
+        <div class="spec-row"><span class="k">Structure</span><span class="v" id="specStruct">Asset-backed, physical title</span></div>
+        <div class="spec-row"><span class="k">Service life</span><span class="v" id="specLife">Decades, not upgrade cycles</span></div>
+        <div class="spec-row"><span class="k">Status</span><span class="v" id="specStatus">Active</span></div>
+        <div class="spec-hint">HOVER ANOTHER MARKER →</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">The difference</div>
+      <h2 class="display">Most portfolios are<br>full of things that expire.</h2>
+    </div>
+    <div class="compare-grid">
+      <div class="compare-col">
+        <div class="compare-label">The Old Way</div>
+        <h3 class="display">Paper &amp; trend assets</h3>
+        <div class="compare-item"><span class="mark x">✕</span>Value tied to sentiment and market cycles</div>
+        <div class="compare-item"><span class="mark x">✕</span>Obsolescence built into the asset itself</div>
+        <div class="compare-item"><span class="mark x">✕</span>Nothing physical backing the number on screen</div>
+        <div class="compare-item"><span class="mark x">✕</span>Performs whether you understand it or not</div>
+      </div>
+      <div class="compare-col new">
+        <div class="compare-label">The Anchor Model</div>
+        <h3 class="display">Halo assets</h3>
+        <div class="compare-item"><span class="mark check">✓</span>Produces whether markets are up or down</div>
+        <div class="compare-item"><span class="mark check">✓</span>Service life measured in decades</div>
+        <div class="compare-item"><span class="mark check">✓</span>Value anchored in something real, tangible, essential</div>
+        <div class="compare-item"><span class="mark check">✓</span>Structured plainly enough to actually understand</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">See the leak</div>
+      <h2 class="display">What fees and inflation<br>are quietly costing you.</h2>
+      <p>Generic math, your numbers. Not a projection on our returns, a picture of what you're currently losing.</p>
+    </div>
+    <div class="calc-panel">
+      <div>
+        <div class="field">
+          <label>Current portfolio / fixed deposit value</label>
+          <div class="slider-value" id="valOut">R 150,000</div>
+          <input type="range" id="valSlider" min="100000" max="2000000" step="25000" value="150000">
+          <div class="range-labels"><span>R100k</span><span>R2m</span></div>
+        </div>
+        <div class="field">
+          <label>Assumed annual fees + inflation drag</label>
+          <div class="slider-value" id="feeOut">4.5%</div>
+          <input type="range" id="feeSlider" min="1" max="9" step="0.5" value="4.5">
+          <div class="range-labels"><span>1%</span><span>9%</span></div>
+        </div>
+      </div>
+      <div class="output-box">
+        <div class="output-label">Over 10 years, this is</div>
+        <div class="output-value" id="leakOut">R 82,500</div>
+        <div class="output-note">of quiet erosion, before a single market downturn. Illustrative only, based on the figures above. Full details confirmed once you speak with the team.</div>
+      </div>
+    </div>
+    <div class="section-cta">
+      <a href="#apply" class="btn-primary cta-to-form">Show me what I could keep instead →</a>
+    </div>
+  </div>
+</section>
+
+<section class="anchor-section" id="anchor">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Why "Anchor"</div>
+      <h2 class="display">One idea, held plainly.</h2>
+      <p>No fractions to memorise. Just the mechanism, stated honestly.</p>
+    </div>
+    <div class="anchor-grid">
+      <div class="anchor-card"><div class="anchor-num mono">01</div><h4 class="display">Real, not paper</h4><p>Every rand is structured against a physical, productive asset. Not a ticker, not a promise.</p></div>
+      <div class="anchor-card"><div class="anchor-num mono">02</div><h4 class="display">Built to last</h4><p>Halo assets carry a service life measured in decades. What you hold in year one still works in year twenty.</p></div>
+      <div class="anchor-card"><div class="anchor-num mono">03</div><h4 class="display">Plainly understood</h4><p>If you can't explain it back in a sentence, it's not the Anchor Model. Structure over spin, always.</p></div>
+    </div>
+    <div class="section-cta">
+      <a href="#apply" class="btn-primary cta-to-form">Start your projection →</a>
+    </div>
+  </div>
+</section>
+
+<section class="apply-section" id="apply">
+  <div class="wrap">
+    <div class="apply-grid">
+      <div class="apply-copy">
+        <div class="eyebrow">See where you stand</div>
+        <h2 class="display">See what your capital could keep.</h2>
+        <p>Drop your details and the FR+ team will come back with a plain, personalised picture of what the Anchor Model would mean for your capital. No obligation, no pressure.</p>
+        <div class="apply-points">
+          <div class="apply-point"><span class="tick">✓</span>A clear read on what fees and drag are quietly costing you</div>
+          <div class="apply-point"><span class="tick">✓</span>Where asset-backed structuring would sit for your position</div>
+          <div class="apply-point"><span class="tick">✓</span>A real conversation with the team, not a sales script</div>
+        </div>
+      </div>
+      <div class="form-card">
+        <form id="leadForm" novalidate>
+          <div class="form-head">Step 1 of 1 · 60 seconds</div>
+          <h3>Get your capital projection</h3>
+          <div class="form-sub">FSP 53986 · Farm Rescue Plus (Pty) Ltd. Your details are used only to prepare your projection and make contact.</div>
+
+          <div class="fld">
+            <label>Full name <span class="req">*</span></label>
+            <input type="text" name="name" autocomplete="name" placeholder="Your name" required>
+          </div>
+          <div class="fld">
+            <label>Email <span class="req">*</span></label>
+            <input type="email" name="email" autocomplete="email" placeholder="you@example.com" required>
+          </div>
+          <div class="fld">
+            <label>Mobile <span class="req">*</span></label>
+            <input type="tel" name="phone" autocomplete="tel" placeholder="082 555 1234" required>
+          </div>
+          <div class="fld">
+            <label>Investable capital <span class="req">*</span></label>
+            <select name="capital_band" required>
+              <option value="" selected disabled>Select a range</option>
+              <option value="R100k - R500k">R100k - R500k</option>
+              <option value="R500k - R1m">R500k - R1m</option>
+              <option value="R1m - R5m">R1m - R5m</option>
+              <option value="R5m+">R5m+</option>
+            </select>
+          </div>
+
+          <!-- anti-spam honeypot, hidden from humans -->
+          <div class="hp" aria-hidden="true"><label>Company website</label><input type="text" name="company_website" tabindex="-1" autocomplete="off"></div>
+
+          <!-- hidden enrichment fields, populated by JS -->
+          <input type="hidden" name="calc_portfolio_value" value="">
+          <input type="hidden" name="calc_fee_pct" value="">
+          <input type="hidden" name="calc_projected_leak" value="">
+          <input type="hidden" name="utm_source" value="">
+          <input type="hidden" name="utm_medium" value="">
+          <input type="hidden" name="utm_campaign" value="">
+          <input type="hidden" name="utm_content" value="">
+          <input type="hidden" name="utm_term" value="">
+          <input type="hidden" name="fbclid" value="">
+          <input type="hidden" name="gclid" value="">
+          <input type="hidden" name="page_url" value="">
+
+          <label class="consent">
+            <input type="checkbox" name="consent" required>
+            <span>I agree that FR+ may contact me about my projection and store my details for that purpose, in line with POPIA.</span>
+          </label>
+
+          <button type="submit" class="form-submit" id="leadSubmit">Get my projection →</button>
+          <div class="form-msg err" id="formErr"></div>
+          <div class="form-foot">No spam. Your information stays with FR+.</div>
+        </form>
+
+        <div class="form-success" id="formSuccess">
+          <div class="tickcirc">✓</div>
+          <div class="big">You're in. Projection on the way.</div>
+          <p>Thank you. The FR+ team has your details and will be in touch shortly with your personalised picture. Keep an eye on your phone and inbox.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-legal">
+      <b>Farm Rescue Plus (Pty) Ltd</b>, trading as FR Plus, is an authorised financial services provider, FSP No. 53986, in terms of Section 8 of the Financial Advisory and Intermediary Services Act, 2002. This page is for information purposes only and does not constitute financial advice or an offer to invest. All investments carry risk.
+    </div>
+  </div>
+</footer>
+
+<script>
+  const regions = {
+    gauteng: { name:"Gauteng", cls:"Farmland & agri-infrastructure", struct:"Asset-backed, physical title", life:"Decades, not upgrade cycles", status:"Active" },
+    freestate: { name:"Free State", cls:"Grain production infrastructure", struct:"Asset-backed, physical title", life:"Decades, not upgrade cycles", status:"Active" },
+    mpumalanga: { name:"Mpumalanga", cls:"Agricultural machinery & equipment", struct:"Asset-backed, physical title", life:"Decades, not upgrade cycles", status:"Active" },
+    westerncape: { name:"Western Cape", cls:"Farmland & processing infrastructure", struct:"Asset-backed, physical title", life:"Decades, not upgrade cycles", status:"Active" },
+  };
+  const pins = document.querySelectorAll('.pin');
+  const specRegion = document.getElementById('specRegion');
+  const specClass = document.getElementById('specClass');
+  const specStruct = document.getElementById('specStruct');
+  const specLife = document.getElementById('specLife');
+  const specStatus = document.getElementById('specStatus');
+  pins.forEach(pin => {
+    pin.addEventListener('mouseenter', () => {
+      pins.forEach(p => p.classList.remove('active'));
+      pin.classList.add('active');
+      const r = regions[pin.dataset.region];
+      specRegion.textContent = r.name; specClass.textContent = r.cls;
+      specStruct.textContent = r.struct; specLife.textContent = r.life; specStatus.textContent = r.status;
+    });
+  });
+
+  const valSlider = document.getElementById('valSlider');
+  const feeSlider = document.getElementById('feeSlider');
+  const valOut = document.getElementById('valOut');
+  const feeOut = document.getElementById('feeOut');
+  const leakOut = document.getElementById('leakOut');
+  function fmtRand(n){ return 'R ' + Math.round(n).toLocaleString('en-ZA'); }
+  function recalc(){
+    const val = parseFloat(valSlider.value);
+    const fee = parseFloat(feeSlider.value);
+    valOut.textContent = fmtRand(val);
+    feeOut.textContent = fee + '%';
+    const leaked = val * (1 - Math.pow(1 - fee/100, 10));
+    leakOut.textContent = fmtRand(leaked);
+  }
+  valSlider.addEventListener('input', recalc);
+  feeSlider.addEventListener('input', recalc);
+  recalc();
+
+  /* ---- Lead capture wiring ---- */
+  // 1. Pipe live calculator state into the form's hidden fields
+  const hVal = document.querySelector('input[name="calc_portfolio_value"]');
+  const hFee = document.querySelector('input[name="calc_fee_pct"]');
+  const hLeak = document.querySelector('input[name="calc_projected_leak"]');
+  function syncCalc(){
+    if(hVal) hVal.value = valOut.textContent.trim();
+    if(hFee) hFee.value = feeOut.textContent.trim();
+    if(hLeak) hLeak.value = leakOut.textContent.trim();
+  }
+  valSlider.addEventListener('input', syncCalc);
+  feeSlider.addEventListener('input', syncCalc);
+  syncCalc();
+
+  // 2. Capture attribution params from the URL (persist across the session)
+  (function(){
+    const keys = ['utm_source','utm_medium','utm_campaign','utm_content','utm_term','fbclid','gclid'];
+    const params = new URLSearchParams(window.location.search);
+    keys.forEach(k => {
+      let v = params.get(k);
+      if(v){ try{ sessionStorage.setItem('frp_'+k, v); }catch(e){} }
+      else { try{ v = sessionStorage.getItem('frp_'+k); }catch(e){} }
+      const field = document.querySelector('input[name="'+k+'"]');
+      if(field && v) field.value = v;
+    });
+    const pageField = document.querySelector('input[name="page_url"]');
+    if(pageField) pageField.value = window.location.href;
+  })();
+
+  // 3. CTA buttons scroll to the form and focus the first field
+  document.querySelectorAll('.cta-to-form').forEach(btn => {
+    btn.addEventListener('click', () => {
+      setTimeout(() => { const n = document.querySelector('#leadForm input[name="name"]'); if(n) n.focus({preventScroll:true}); }, 650);
+    });
+  });
+
+  // 4. Submit: validate, POST to /api/lead, show success, fire pixel Lead
+  const leadForm = document.getElementById('leadForm');
+  const leadSubmit = document.getElementById('leadSubmit');
+  const formErr = document.getElementById('formErr');
+  const formSuccess = document.getElementById('formSuccess');
+  if(leadForm){
+    leadForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      formErr.style.display = 'none';
+
+      // honeypot: silently drop bots
+      const hp = leadForm.querySelector('input[name="company_website"]');
+      if(hp && hp.value.trim() !== ''){ leadForm.style.display='none'; formSuccess.style.display='block'; return; }
+
+      const data = {};
+      new FormData(leadForm).forEach((v,k) => { data[k] = v; });
+      data.consent = leadForm.querySelector('input[name="consent"]').checked;
+      data.submitted_at = new Date().toISOString();
+
+      if(!data.name || !data.email || !data.phone || !data.capital_band || !data.consent){
+        formErr.textContent = 'Please complete every field and tick the consent box.';
+        formErr.style.display = 'block'; return;
+      }
+
+      leadSubmit.disabled = true;
+      const original = leadSubmit.textContent;
+      leadSubmit.textContent = 'Sending...';
+      try{
+        const res = await fetch('/api/lead', {
+          method:'POST',
+          headers:{'Content-Type':'application/json'},
+          body: JSON.stringify(data)
+        });
+        if(!res.ok) throw new Error('Bad response');
+        leadForm.style.display = 'none';
+        formSuccess.style.display = 'block';
+        if(typeof fbq === 'function'){ fbq('track','Lead',{content_name:'FR+ Anchor Model', currency:'ZAR'}); }
+        formSuccess.scrollIntoView({behavior:'smooth', block:'center'});
+      }catch(err){
+        formErr.textContent = 'Something went wrong sending your details. Please try again in a moment.';
+        formErr.style.display = 'block';
+        leadSubmit.disabled = false;
+        leadSubmit.textContent = original;
+      }
+    });
+  }
+</script>
+</body>
+</html>
