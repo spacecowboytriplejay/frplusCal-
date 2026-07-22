@@ -1,4 +1,4 @@
-# FR+ — The Anchor Model
+# FR Plus — The Anchor Model
 
 Static landing page for FR Plus Investments with a lead-capture form that posts to
 GoHighLevel through a Vercel serverless function. Deploys on Vercel. Every push to
@@ -42,5 +42,5 @@ event shows in Meta Events Manager / Test Events. Test the pipe end to end befor
 send a single rand of ad traffic at it.
 
 ## Notes still open (from the build)
-- Map region markers are placeholder geography. Swap for real asset locations before launch.
+- Map is the real 9-province South Africa geometry with the five client-confirmed asset regions. DONE.
 - Calculator is generic (fees/inflation only). Keep it that way until Key Individual sign-off.

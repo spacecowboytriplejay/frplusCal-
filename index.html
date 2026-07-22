@@ -3,19 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FR+: The Anchor Model</title>
+<title>FR Plus: The Anchor Model</title>
 
 <!-- SEO -->
-<meta name="description" content="FR+ builds portfolios on halo assets: farmland, machinery, infrastructure. Physical, productive, asset-backed. FSCA regulated. R100k+ capital floor.">
+<meta name="description" content="FR Plus builds portfolios on halo assets: farmland, machinery, infrastructure. Physical, productive, asset-backed. FSCA regulated. R100k+ capital floor.">
 <meta name="theme-color" content="#4B3B7C">
-<!-- REPLACE the two URLs below with your live FR+ domain before you point DNS at it -->
+<!-- REPLACE the two URLs below with your live FR Plus domain before you point DNS at it -->
 <link rel="canonical" href="https://REPLACE-WITH-FRPLUS-DOMAIN/">
 <meta property="og:url" content="https://REPLACE-WITH-FRPLUS-DOMAIN/">
 
 <!-- Open Graph (WhatsApp / LinkedIn / Facebook preview card) -->
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="FR+">
-<meta property="og:title" content="FR+: The Anchor Model">
+<meta property="og:site_name" content="FR Plus">
+<meta property="og:title" content="FR Plus: The Anchor Model">
 <meta property="og:description" content="While paper assets chase the next cycle, halo assets keep working. Physical, productive, built to outlast the trends around them.">
 <meta property="og:image" content="https://REPLACE-WITH-FRPLUS-DOMAIN/og-frplus.png">
 <meta property="og:image:width" content="1200">
@@ -23,17 +23,17 @@
 
 <!-- Twitter / X -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="FR+: The Anchor Model">
+<meta name="twitter:title" content="FR Plus: The Anchor Model">
 <meta name="twitter:description" content="Physical, productive, asset-backed. Built to outlast the trends around them.">
 <meta name="twitter:image" content="https://REPLACE-WITH-FRPLUS-DOMAIN/og-frplus.png">
 
 <!-- Favicon (inline SVG, no extra file needed) -->
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%234B3B7C'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='17' font-weight='600' fill='%23FCFBF8' text-anchor='middle'%3EF%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%234B3B7C'/%3E%3Ctext x='16' y='22' font-family='Arial,sans-serif' font-size='17' font-weight='600' fill='%23FCFBF8' text-anchor='middle'%3EF%3C/text%3E%3C/svg%3E">
 
 <!-- Fonts: preconnect + link (parallel fetch, not render-blocking @import) -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600&family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap">
 
 <!-- Meta Pixel. Replace REPLACE-WITH-META-PIXEL-ID (2 places) with your pixel ID. -->
 <script>
@@ -71,18 +71,18 @@
   body{
     background:var(--paper);
     color:var(--ink);
-    font-family:'Space Grotesk',sans-serif;
+    font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
     overflow-x:hidden;
   }
   ::selection{background:var(--violet);color:var(--paper);}
-  .display{font-family:'Fraunces',serif; font-optical-sizing:auto;}
-  .mono{font-family:'JetBrains Mono',monospace;}
+  .display{font-family:'Montserrat',sans-serif; font-optical-sizing:auto;}
+  .mono{font-family:'Montserrat',sans-serif;}
   a{color:inherit;text-decoration:none;}
   .wrap{max-width:1240px;margin:0 auto;padding:0 40px;}
   @media(max-width:768px){.wrap{padding:0 22px;}}
 
   .eyebrow{
-    font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.22em;text-transform:uppercase;
+    font-family:'Montserrat',sans-serif;font-size:12px;letter-spacing:0.22em;text-transform:uppercase;
     color:var(--violet); display:flex;align-items:center;gap:10px;
   }
   .eyebrow::before{content:"";width:22px;height:1px;background:var(--violet);}
@@ -95,10 +95,11 @@
     background:rgba(252,251,248,0.86);backdrop-filter:blur(10px);
     border-bottom:1px solid var(--line);
   }
-  .logo{font-family:'Fraunces',serif;font-weight:600;font-size:22px;letter-spacing:0.01em;color:var(--ink);}
-  .logo span{color:var(--violet);}
+  .logo{display:block;line-height:0;}
+  .logo svg{height:44px;width:auto;display:block;}
+  @media(max-width:640px){.logo svg{height:34px;}}
   .fsp-badge{
-    font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.08em;
+    font-family:'Montserrat',sans-serif;font-size:11px;letter-spacing:0.08em;
     border:1px solid var(--line);padding:7px 14px;border-radius:100px;color:var(--ink-dim);background:var(--paper);
   }
   @media(max-width:640px){nav{padding:20px 22px;}}
@@ -130,24 +131,24 @@
   .hero-sub{max-width:520px;margin-top:26px;font-size:18px;line-height:1.6;color:var(--ink-dim);}
   .hero-tags{display:flex;gap:12px;margin-top:36px;flex-wrap:wrap;}
   .tag{
-    font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.05em;
+    font-family:'Montserrat',sans-serif;font-size:12px;letter-spacing:0.05em;
     border:1px solid var(--line);padding:9px 16px;border-radius:100px;color:var(--ink);
     display:flex;align-items:center;gap:8px;background:var(--paper);
   }
   .tag::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--green);}
   .cta-row{margin-top:44px;display:flex;gap:20px;align-items:center;flex-wrap:wrap;}
   .btn-primary{
-    background:var(--violet);color:#fff;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:15px;
+    background:var(--violet);color:#fff;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:700;font-size:15px;
     padding:17px 30px;border-radius:6px;border:none;cursor:pointer;
     box-shadow:0 14px 30px -12px rgba(75,59,124,0.45);
     transition:transform .25s ease, background .25s ease, box-shadow .25s ease;
     display:inline-flex;align-items:center;gap:10px;
   }
   .btn-primary:hover{transform:translateY(-2px);background:var(--violet-deep);box-shadow:0 18px 34px -10px rgba(75,59,124,0.55);}
-  .btn-ghost{font-family:'Space Grotesk',sans-serif;font-size:15px;color:var(--ink-dim);border-bottom:1px solid var(--line);padding-bottom:3px;transition:color .2s,border-color .2s;}
+  .btn-ghost{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:15px;color:var(--ink-dim);border-bottom:1px solid var(--line);padding-bottom:3px;transition:color .2s,border-color .2s;}
   .btn-ghost:hover{color:var(--ink);border-color:var(--violet);}
 
-  .scroll-cue{position:absolute;bottom:36px;left:40px;font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--ink-dim);display:flex;align-items:center;gap:10px;letter-spacing:0.1em;}
+  .scroll-cue{position:absolute;bottom:36px;left:40px;font-family:'Montserrat',sans-serif;font-size:11px;color:var(--ink-dim);display:flex;align-items:center;gap:10px;letter-spacing:0.1em;}
   .scroll-cue .line{width:1px;height:34px;background:linear-gradient(var(--violet),transparent);animation:pulse 2s ease-in-out infinite;}
   @keyframes pulse{0%,100%{opacity:.25}50%{opacity:1}}
 
@@ -157,14 +158,32 @@
   .section-head h2{font-size:clamp(30px,4vw,44px);font-weight:500;margin-top:16px;line-height:1.1;color:var(--ink);}
   .section-head p{margin-top:16px;color:var(--ink-dim);font-size:16.5px;line-height:1.65;max-width:520px;}
 
+  /* TRUST STRIP */
+  .trust-section{padding:54px 0;border-top:1px solid var(--line);background:var(--paper);}
+  .trust-grid{display:flex;gap:64px;align-items:center;flex-wrap:wrap;justify-content:space-between;}
+  .trust-block{display:flex;align-items:center;gap:26px;flex-wrap:wrap;}
+  .trust-label{font-family:'Montserrat',sans-serif;font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:var(--ink-dim);white-space:nowrap;}
+  .trust-logos{display:flex;align-items:center;gap:22px;flex-wrap:wrap;}
+  .partner{height:64px;width:64px;border-radius:50%;filter:grayscale(1);opacity:0.8;transition:filter .25s ease, opacity .25s ease, transform .25s ease;box-shadow:0 6px 18px -10px rgba(28,27,34,0.35);}
+  .partner:hover{filter:none;opacity:1;transform:translateY(-2px);}
+  .seen-badge{display:inline-flex;align-items:center;gap:12px;border:1.5px solid var(--ink);padding:11px 18px;border-radius:8px;transition:transform .2s ease, box-shadow .2s ease;}
+  .seen-badge:hover{transform:translateY(-2px);box-shadow:0 10px 24px -14px rgba(28,27,34,0.5);}
+  .seen-name{font-family:'Montserrat',sans-serif;font-weight:800;font-size:15px;letter-spacing:0.14em;color:var(--ink);}
+  .seen-net{font-family:'Montserrat',sans-serif;font-weight:600;font-size:10px;letter-spacing:0.2em;color:var(--ink-dim);border-left:1px solid var(--line);padding-left:12px;}
+  .seen-play{font-family:'Montserrat',sans-serif;font-weight:600;font-size:11px;color:var(--violet);letter-spacing:0.04em;}
+  @media(max-width:760px){.trust-grid{gap:28px;}.partner{height:52px;width:52px;}}
+
+  .invest-ghost{margin-left:22px;}
+  .cta-note{margin-top:14px;font-size:13px;color:var(--ink-dim);font-family:'Montserrat',sans-serif;letter-spacing:0.02em;}
+
   /* MAP */
   .map-section{background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
   .map-layout{display:grid;grid-template-columns:1fr 1.3fr;gap:60px;align-items:center;}
   @media(max-width:900px){.map-layout{grid-template-columns:1fr;}}
   .map-stage{position:relative;}
   .sa-outline{width:100%;height:auto;display:block;overflow:visible;}
-  .sa-fill{fill:none;stroke:rgba(75,59,124,0.22);stroke-width:1.2;}
-  .sa-facets{fill:rgba(75,59,124,0.05);stroke:rgba(75,59,124,0.10);stroke-width:0.6;}
+  .sa-prov{fill:rgba(75,59,124,0.05);stroke:rgba(75,59,124,0.28);stroke-width:1.1;stroke-linejoin:round;transition:fill .3s ease;}
+  .sa-prov.lit{fill:rgba(75,59,124,0.16);}
   .pin{cursor:pointer;}
   .pin circle.core{fill:var(--violet);}
   .pin circle.ring{fill:none;stroke:var(--violet);stroke-width:1.4;opacity:0.55;transform-origin:center;animation:ringpulse 2.6s ease-out infinite;}
@@ -176,21 +195,21 @@
     display:flex;flex-direction:column;justify-content:center;
     box-shadow:0 20px 44px -28px rgba(75,59,124,0.30);
   }
-  .spec-card .region{font-family:'Fraunces',serif;font-size:26px;color:var(--violet);margin-top:8px;}
+  .spec-card .region{font-family:'Montserrat',sans-serif;font-size:26px;color:var(--violet);margin-top:8px;}
   .spec-row{display:flex;justify-content:space-between;padding:13px 0;border-bottom:1px solid var(--line);font-size:14.5px;}
   .spec-row:last-child{border-bottom:none;}
   .spec-row .k{color:var(--ink-dim);}
-  .spec-row .v{font-family:'JetBrains Mono',monospace;color:var(--ink);}
-  .spec-hint{font-size:13px;color:var(--ink-dim);margin-top:20px;font-family:'JetBrains Mono',monospace;letter-spacing:0.03em;}
+  .spec-row .v{font-family:'Montserrat',sans-serif;font-weight:500;color:var(--ink);text-align:right;max-width:62%;}
+  .spec-hint{font-size:13px;color:var(--ink-dim);margin-top:20px;font-family:'Montserrat',sans-serif;letter-spacing:0.03em;}
 
   /* COMPARISON */
   .compare-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:12px;overflow:hidden;}
   @media(max-width:768px){.compare-grid{grid-template-columns:1fr;}}
   .compare-col{background:#fff;padding:44px 40px;}
   .compare-col.new{background:linear-gradient(165deg, var(--violet-soft), #fff 60%);}
-  .compare-label{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--ink-dim);}
+  .compare-label{font-family:'Montserrat',sans-serif;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--ink-dim);}
   .compare-col.new .compare-label{color:var(--violet);}
-  .compare-col h3{font-family:'Fraunces',serif;font-size:24px;font-weight:500;margin-top:14px;margin-bottom:26px;color:var(--ink);}
+  .compare-col h3{font-family:'Montserrat',sans-serif;font-size:24px;font-weight:500;margin-top:14px;margin-bottom:26px;color:var(--ink);}
   .compare-item{display:flex;gap:14px;padding:13px 0;font-size:15px;line-height:1.5;color:var(--ink-dim);}
   .compare-col.new .compare-item{color:var(--ink);}
   .mark{flex-shrink:0;width:18px;height:18px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;margin-top:2px;}
@@ -205,37 +224,70 @@
   }
   @media(max-width:800px){.calc-panel{grid-template-columns:1fr;padding:32px 26px;}}
   .field{margin-bottom:34px;}
-  .field label{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:var(--ink-dim);display:block;margin-bottom:14px;}
-  .slider-value{font-family:'Fraunces',serif;font-size:38px;color:var(--violet);}
+  .field label{font-family:'Montserrat',sans-serif;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:var(--ink-dim);display:block;margin-bottom:14px;}
+  .slider-value{font-family:'Montserrat',sans-serif;font-size:38px;color:var(--violet);}
   input[type=range]{width:100%;height:2px;background:var(--line);appearance:none;margin-top:16px;border-radius:2px;}
   input[type=range]::-webkit-slider-thumb{appearance:none;width:18px;height:18px;border-radius:50%;background:var(--violet);border:3px solid #fff;cursor:pointer;box-shadow:0 0 0 1px var(--violet);}
-  .range-labels{display:flex;justify-content:space-between;font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--ink-dim);margin-top:8px;}
+  .range-labels{display:flex;justify-content:space-between;font-family:'Montserrat',sans-serif;font-size:11px;color:var(--ink-dim);margin-top:8px;}
   .output-box{background:var(--mist);border:1px solid var(--line);border-radius:10px;padding:30px;display:flex;flex-direction:column;justify-content:center;}
-  .output-label{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:var(--violet);}
-  .output-value{font-family:'Fraunces',serif;font-size:44px;margin-top:12px;line-height:1;color:var(--ink);}
+  .output-label{font-family:'Montserrat',sans-serif;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:var(--violet);}
+  .output-value{font-family:'Montserrat',sans-serif;font-size:44px;margin-top:12px;line-height:1;color:var(--ink);}
   .output-note{font-size:13px;color:var(--ink-dim);margin-top:14px;line-height:1.5;}
+
+  /* HALO */
+  .halo-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:12px;overflow:hidden;margin-top:56px;}
+  @media(max-width:900px){.halo-grid{grid-template-columns:1fr 1fr;}}
+  @media(max-width:560px){.halo-grid{grid-template-columns:1fr;}}
+  .halo-card{background:#fff;padding:36px 30px;position:relative;overflow:hidden;}
+  .halo-letter{font-family:'Montserrat',sans-serif;font-weight:800;font-size:13px;color:var(--violet);border:1px solid var(--line);width:30px;height:30px;border-radius:7px;display:flex;align-items:center;justify-content:center;background:var(--violet-soft);}
+  .halo-ghost{position:absolute;top:6px;right:14px;font-family:'Montserrat',sans-serif;font-weight:800;font-size:74px;color:var(--violet);opacity:0.06;line-height:1;pointer-events:none;}
+  .halo-card h4{font-family:'Montserrat',sans-serif;font-size:18px;font-weight:700;margin-top:18px;margin-bottom:10px;color:var(--ink);}
+  .halo-card p{font-size:14px;color:var(--ink-dim);line-height:1.6;}
+
+  /* INVEST NOW */
+  .invest-band{background:linear-gradient(160deg, var(--violet-deep), var(--violet));border-radius:16px;padding:64px 56px;display:flex;align-items:center;justify-content:space-between;gap:40px;flex-wrap:wrap;box-shadow:0 30px 60px -30px rgba(55,44,92,0.55);}
+  @media(max-width:700px){.invest-band{padding:44px 30px;}}
+  .invest-band h2{font-family:'Montserrat',sans-serif;font-size:clamp(26px,3.4vw,38px);font-weight:700;color:#fff;line-height:1.15;}
+  .invest-band p{margin-top:14px;color:#CFC7E4;font-size:16px;line-height:1.6;max-width:480px;}
+  .btn-invest{background:#fff;color:var(--violet-deep);font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:700;font-size:16px;padding:18px 34px;border-radius:8px;display:inline-flex;align-items:center;gap:10px;box-shadow:0 16px 34px -14px rgba(0,0,0,0.4);transition:transform .22s ease, box-shadow .22s ease;white-space:nowrap;}
+  .btn-invest:hover{transform:translateY(-2px);box-shadow:0 20px 40px -12px rgba(0,0,0,0.5);}
+
+  /* CASE STUDY */
+  .case-section{background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .case-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:52px;display:grid;grid-template-columns:1.35fr 1fr;gap:56px;box-shadow:0 24px 60px -36px rgba(75,59,124,0.28);}
+  @media(max-width:860px){.case-card{grid-template-columns:1fr;padding:32px 26px;gap:36px;}}
+  .case-id{display:flex;align-items:center;gap:18px;margin-bottom:26px;}
+  .case-avatar{width:64px;height:64px;border-radius:50%;background:var(--violet);color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Montserrat',sans-serif;font-weight:800;font-size:22px;letter-spacing:0.02em;flex-shrink:0;}
+  .case-name{font-family:'Montserrat',sans-serif;font-weight:700;font-size:20px;color:var(--ink);}
+  .case-role{font-family:'Montserrat',sans-serif;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:var(--ink-dim);margin-top:4px;}
+  .case-body{font-size:16px;line-height:1.7;color:var(--ink-dim);}
+  .case-body b{color:var(--ink);}
+  .case-cta{margin-top:26px;}
+  .case-facts{border-left:1px solid var(--line);padding-left:40px;display:flex;flex-direction:column;justify-content:center;}
+  @media(max-width:860px){.case-facts{border-left:none;padding-left:0;border-top:1px solid var(--line);padding-top:26px;}}
 
   /* ANCHOR */
   .anchor-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:12px;overflow:hidden;margin-top:56px;}
   @media(max-width:800px){.anchor-grid{grid-template-columns:1fr;}}
   .anchor-card{background:#fff;padding:38px 32px;}
-  .anchor-num{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--violet);}
-  .anchor-card h4{font-family:'Fraunces',serif;font-size:21px;font-weight:500;margin-top:16px;margin-bottom:12px;color:var(--ink);}
+  .anchor-num{font-family:'Montserrat',sans-serif;font-size:12px;color:var(--violet);}
+  .anchor-card h4{font-family:'Montserrat',sans-serif;font-size:21px;font-weight:500;margin-top:16px;margin-bottom:12px;color:var(--ink);}
   .anchor-card p{font-size:14.5px;color:var(--ink-dim);line-height:1.6;}
 
   footer{border-top:1px solid var(--line);padding:56px 0 40px;background:var(--paper-2);}
-  .footer-legal{font-family:'JetBrains Mono',monospace;font-size:11.5px;color:var(--ink-dim);line-height:1.7;max-width:820px;}
+  .footer-legal{font-family:'Montserrat',sans-serif;font-size:11.5px;color:var(--ink-dim);line-height:1.7;max-width:820px;}
   .footer-legal b{color:var(--ink);}
 
   /* sub-brand strip */
   .subbrand-strip{display:flex;gap:16px;margin-top:36px;flex-wrap:wrap;}
-  .subbrand{display:flex;align-items:center;gap:10px;font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--ink-dim);}
+  .subbrand{display:flex;align-items:center;gap:10px;font-family:'Montserrat',sans-serif;font-size:12px;color:var(--ink-dim);}
   .subbrand .dot{width:9px;height:9px;border-radius:50%;}
   .subbrand.inv .dot{background:var(--rust);}
   .subbrand.ins .dot{background:var(--green);}
 
   /* SHARED CTA */
-  .section-cta{margin-top:44px;}
+  .section-cta{margin-top:44px;display:flex;align-items:center;flex-wrap:wrap;row-gap:12px;}
+  .section-cta .cta-note{flex-basis:100%;}
 
   /* LEAD FORM */
   .apply-section{background:var(--violet-deep);color:var(--paper);border-top:1px solid var(--line);}
@@ -243,40 +295,40 @@
   @media(max-width:900px){.apply-grid{grid-template-columns:1fr;gap:40px;}}
   .apply-copy .eyebrow{color:#B9A8E8;}
   .apply-copy .eyebrow::before{background:#B9A8E8;}
-  .apply-copy h2{font-family:'Fraunces',serif;font-size:clamp(30px,4vw,46px);font-weight:500;line-height:1.08;margin-top:16px;color:#fff;}
+  .apply-copy h2{font-family:'Montserrat',sans-serif;font-size:clamp(30px,4vw,46px);font-weight:500;line-height:1.08;margin-top:16px;color:#fff;}
   .apply-copy p{margin-top:20px;color:#CFC7E4;font-size:16.5px;line-height:1.65;max-width:460px;}
   .apply-points{margin-top:30px;display:flex;flex-direction:column;gap:14px;}
   .apply-point{display:flex;gap:12px;align-items:flex-start;font-size:15px;color:#E6E0F2;}
   .apply-point .tick{flex-shrink:0;width:20px;height:20px;border-radius:50%;background:var(--green);color:#fff;display:flex;align-items:center;justify-content:center;font-size:11px;margin-top:1px;}
   .form-card{background:var(--paper);border-radius:16px;padding:40px;box-shadow:0 30px 70px -30px rgba(0,0,0,0.5);}
   @media(max-width:520px){.form-card{padding:28px 22px;}}
-  .form-head{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:var(--violet);}
-  .form-card h3{font-family:'Fraunces',serif;font-size:25px;font-weight:500;color:var(--ink);margin-top:10px;margin-bottom:6px;}
+  .form-head{font-family:'Montserrat',sans-serif;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:var(--violet);}
+  .form-card h3{font-family:'Montserrat',sans-serif;font-size:25px;font-weight:500;color:var(--ink);margin-top:10px;margin-bottom:6px;}
   .form-sub{font-size:13px;color:var(--ink-dim);margin-bottom:26px;line-height:1.5;}
   .fld{margin-bottom:18px;}
-  .fld label{display:block;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.06em;text-transform:uppercase;color:var(--ink-dim);margin-bottom:8px;}
+  .fld label{display:block;font-family:'Montserrat',sans-serif;font-size:11px;letter-spacing:0.06em;text-transform:uppercase;color:var(--ink-dim);margin-bottom:8px;}
   .fld label .req{color:var(--rust);}
   .fld input,.fld select{
     width:100%;padding:14px 16px;border:1px solid var(--line);border-radius:8px;background:#fff;
-    font-family:'Space Grotesk',sans-serif;font-size:15px;color:var(--ink);transition:border-color .18s, box-shadow .18s;
+    font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:15px;color:var(--ink);transition:border-color .18s, box-shadow .18s;
   }
   .fld input:focus,.fld select:focus{outline:none;border-color:var(--violet);box-shadow:0 0 0 3px rgba(75,59,124,0.12);}
   .fld input::placeholder{color:#A9A2B8;}
   .consent{display:flex;gap:11px;align-items:flex-start;margin:8px 0 22px;font-size:12.5px;color:var(--ink-dim);line-height:1.5;cursor:pointer;}
   .consent input{width:17px;height:17px;margin-top:2px;flex-shrink:0;accent-color:var(--violet);}
   .form-submit{
-    width:100%;background:var(--violet);color:#fff;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:16px;
+    width:100%;background:var(--violet);color:#fff;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:700;font-size:16px;
     padding:17px;border:none;border-radius:8px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;
     transition:transform .2s, background .2s, box-shadow .2s;box-shadow:0 14px 30px -12px rgba(75,59,124,0.5);
   }
   .form-submit:hover{transform:translateY(-2px);background:var(--violet-deep);}
   .form-submit:disabled{opacity:0.6;cursor:not-allowed;transform:none;}
-  .form-foot{font-family:'JetBrains Mono',monospace;font-size:10.5px;color:var(--ink-dim);text-align:center;margin-top:14px;letter-spacing:0.03em;}
+  .form-foot{font-family:'Montserrat',sans-serif;font-size:10.5px;color:var(--ink-dim);text-align:center;margin-top:14px;letter-spacing:0.03em;}
   .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;}
   .form-msg{display:none;font-size:14px;line-height:1.5;padding:14px 16px;border-radius:8px;margin-top:14px;}
-  .form-msg.err{display:block;background:#FBEDE9;border:1px solid rgba(193,85,44,0.4);color:#8A3C1E;}
+  .form-msg.err{background:#FBEDE9;border:1px solid rgba(193,85,44,0.4);color:#8A3C1E;}
   .form-success{display:none;text-align:center;padding:20px 0;}
-  .form-success .big{font-family:'Fraunces',serif;font-size:26px;color:var(--violet);margin-bottom:10px;}
+  .form-success .big{font-family:'Montserrat',sans-serif;font-size:26px;color:var(--violet);margin-bottom:10px;}
   .form-success p{font-size:14.5px;color:var(--ink-dim);line-height:1.6;}
   .form-success .tickcirc{width:52px;height:52px;border-radius:50%;background:var(--green);color:#fff;display:flex;align-items:center;justify-content:center;font-size:24px;margin:0 auto 18px;}
 </style>
@@ -284,7 +336,215 @@
 <body>
 
 <nav>
-  <div class="logo">FR<span>+</span></div>
+  <a class="logo" href="#" aria-label="FR Plus home"><svg class="logo-svg" role="img" aria-label="FR Plus" xmlns="http://www.w3.org/2000/svg" viewBox="95.0 5.0 414.5 212.0" >
+
+<path fill="#1F1F1E" opacity="1.000000" stroke="none" 
+	d="
+M259.819244,183.578369 
+	C256.332611,183.191544 253.010727,183.191544 249.279144,183.191544 
+	C249.279144,192.822556 249.279144,202.567062 249.279144,212.654205 
+	C235.481415,212.654205 222.083359,212.654205 208.341705,212.654205 
+	C208.341705,173.148163 208.341705,133.431259 208.341705,93.294388 
+	C209.327774,93.211380 210.583069,93.014725 211.838531,93.013588 
+	C232.824020,92.994583 253.847366,92.217148 274.783905,93.229599 
+	C294.073242,94.162384 313.138977,103.499847 319.040253,124.859169 
+	C324.281555,143.829620 318.552124,165.849655 298.872131,175.792618 
+	C307.062805,187.907959 315.240936,200.004791 324.024597,212.997330 
+	C308.830841,212.997330 294.905609,213.082336 280.985535,212.853760 
+	C279.721375,212.833008 278.203156,210.993851 277.290527,209.664398 
+	C271.445709,201.150162 265.737274,192.542297 259.819244,183.578369 
+M254.598740,125.000000 
+	C252.831802,125.000000 251.064865,125.000000 249.230270,125.000000 
+	C249.230270,134.225647 249.230270,142.934525 249.230270,152.390244 
+	C255.502060,151.912888 261.505951,151.493866 267.502716,150.990067 
+	C275.346985,150.331024 279.272125,145.237564 279.000000,136.174500 
+	C278.823090,130.282745 273.079468,125.112030 266.524017,125.010231 
+	C262.874176,124.953552 259.222717,125.000008 254.598740,125.000000 
+z"/>
+<path fill="#1F1F1E" opacity="1.000000" stroke="none" 
+	d="
+M99.000000,175.000000 
+	C99.000000,147.538712 99.000000,120.577431 99.000000,93.308327 
+	C131.254593,93.308327 163.306900,93.308327 195.680023,93.308327 
+	C195.680023,103.237869 195.680023,113.303505 195.680023,123.781914 
+	C177.419250,123.781914 159.023239,123.781914 140.314880,123.781914 
+	C140.314880,130.247009 140.314880,136.315826 140.314880,142.800293 
+	C156.264465,142.800293 172.329224,142.800293 188.695251,142.800293 
+	C188.695251,153.602768 188.695251,164.000946 188.695251,174.813629 
+	C172.721832,174.813629 156.657181,174.813629 140.181244,174.813629 
+	C140.181244,187.614059 140.181244,200.015503 140.181244,212.705978 
+	C126.375526,212.705978 112.979561,212.705978 99.000000,212.705978 
+	C99.000000,200.345993 99.000000,187.923004 99.000000,175.000000 
+z"/>
+<path fill="#1F1F1E" opacity="1.000000" stroke="none" 
+	d="
+M344.979004,125.034317 
+	C334.850708,128.878952 324.800476,118.899170 324.980103,111.731476 
+	C325.088501,107.406029 324.828857,103.067322 325.039062,98.749390 
+	C325.376953,91.808685 318.014709,83.167633 310.222687,83.849617 
+	C304.894958,84.315918 299.374237,83.787254 294.064240,82.931396 
+	C287.842133,81.928528 282.641418,76.371208 282.003540,71.148872 
+	C281.097290,63.729092 284.039581,56.879238 290.102600,54.099792 
+	C293.081879,52.734020 296.639648,52.183449 299.958679,52.090729 
+	C309.273590,51.830524 318.615662,51.659771 327.919434,52.073475 
+	C345.292206,52.845974 356.499115,64.485939 357.867249,81.520065 
+	C358.611206,90.782501 358.064575,100.154366 357.980743,109.475800 
+	C357.905853,117.807159 353.366150,123.312454 344.979004,125.034317 
+z"/>
+<path fill="#665DA9" opacity="1.000000" stroke="none" 
+	d="
+M329.957458,14.885939 
+	C334.689087,8.290006 341.200989,8.058997 348.670441,10.253473 
+	C349.739044,10.789339 350.392700,10.839714 351.046387,10.890089 
+	C356.690277,13.109421 358.658112,17.762768 358.955627,23.303818 
+	C359.178314,27.450626 358.957733,31.619509 359.011719,35.777561 
+	C359.073181,40.515762 361.218872,44.251492 364.894592,47.950241 
+	C365.365997,49.253967 365.701782,49.877811 366.037567,50.501663 
+	C366.425964,50.062927 366.814362,49.624187 367.202759,49.185440 
+	C372.489655,49.790291 377.774628,50.412624 383.064240,50.992764 
+	C385.780273,51.290649 388.504578,51.513237 391.655273,52.254402 
+	C392.739075,52.789326 393.392700,52.839703 394.046356,52.890079 
+	C400.475769,55.092152 402.819305,62.861263 401.910278,68.758171 
+	C400.769409,76.158791 395.074127,81.798065 388.364014,81.938263 
+	C379.736389,82.118523 371.099731,81.869568 362.223145,81.152618 
+	C361.972290,80.296257 361.965332,80.092766 361.958374,79.889282 
+	C361.758362,79.525688 361.558350,79.162102 361.652039,78.360840 
+	C361.686035,76.616104 361.426331,75.309044 361.166595,74.001991 
+	C357.750153,61.949753 350.728302,53.250675 338.290283,49.769909 
+	C335.209991,48.907898 331.986176,48.558800 328.414185,47.446350 
+	C328.652496,36.241161 329.304993,25.563549 329.957458,14.885939 
+z"/>
+<path fill="#665DA9" opacity="1.000000" stroke="none" 
+	d="
+M375.000000,119.997375 
+	C375.000000,112.878563 375.000000,106.258896 375.000000,98.591148 
+	C382.524506,99.090492 389.742096,99.112579 396.801788,100.179337 
+	C402.683594,101.068108 405.893219,107.659988 404.992188,115.051582 
+	C404.361328,120.226685 399.233398,124.712265 393.371796,124.965050 
+	C389.428650,125.135101 385.472229,124.997421 381.167511,124.997421 
+	C381.167511,128.682816 381.167511,131.944885 381.167511,135.737854 
+	C379.112305,135.841171 377.391174,135.927689 375.000000,136.047913 
+	C375.000000,130.685028 375.000000,125.590775 375.000000,119.997375 
+M393.196808,105.004211 
+	C389.247864,104.580627 385.298889,104.157051 381.369019,103.735519 
+	C381.369019,109.739563 381.369019,114.766685 381.369019,119.999657 
+	C384.699188,119.999657 387.663483,119.982864 390.627472,120.003761 
+	C394.655518,120.032166 397.938477,118.348198 398.840057,114.450188 
+	C399.776093,110.403236 398.863739,106.526855 393.196808,105.004211 
+z"/>
+<path fill="#665DA9" opacity="1.000000" stroke="none" 
+	d="
+M480.111237,127.958199 
+	C484.830719,130.704834 489.724243,133.080215 495.265137,130.880478 
+	C496.779449,130.279297 498.756500,128.330902 498.741577,127.021042 
+	C498.722565,125.351074 497.270599,122.929260 495.771881,122.203377 
+	C492.596893,120.665627 488.961853,120.106033 485.568390,118.985115 
+	C478.721802,116.723572 477.365784,114.559441 478.004272,107.312881 
+	C478.399231,102.830215 481.772491,99.903847 487.555573,99.026955 
+	C493.490662,98.127014 497.655548,99.118439 502.901672,102.710098 
+	C502.504974,103.909515 502.100739,105.131783 501.683380,106.393646 
+	C501.465912,106.393646 501.206360,106.438507 500.967682,106.386932 
+	C497.330139,105.600922 493.656708,104.086189 490.074585,104.279312 
+	C487.977417,104.392372 485.096619,106.835762 484.224579,108.922867 
+	C482.857880,112.193825 485.973663,113.257866 488.640930,114.024330 
+	C492.383484,115.099792 496.150452,116.120422 499.820831,117.409706 
+	C504.836151,119.171379 505.290161,123.219131 505.083191,127.862221 
+	C504.892975,132.129440 502.052643,134.077316 498.948486,135.415878 
+	C492.197784,138.326904 485.540741,136.901978 479.054993,134.030472 
+	C475.577148,132.490692 477.485657,130.364563 478.883850,128.149658 
+	C479.703888,127.971680 479.907562,127.964935 480.111237,127.958199 
+z"/>
+<path fill="#665DA9" opacity="1.000000" stroke="none" 
+	d="
+M471.000000,112.997208 
+	C471.000000,116.322060 470.746613,119.178055 471.044952,121.975204 
+	C472.182343,132.638611 460.440430,138.962219 451.986542,136.551712 
+	C443.221710,134.052597 440.000610,129.984726 440.000061,120.649170 
+	C439.999634,113.676506 440.000000,106.703835 440.000000,99.369507 
+	C441.962555,99.369507 443.672302,99.369507 446.000000,99.369507 
+	C446.000000,106.571304 445.967285,113.841583 446.010254,121.111420 
+	C446.045349,127.047607 448.735046,130.601852 453.368042,130.995834 
+	C461.193115,131.661255 464.078156,129.832932 464.934601,122.520325 
+	C465.815308,115.000481 465.991943,107.398178 466.507263,99.354828 
+	C467.535034,99.240753 468.919678,99.087074 471.000000,98.856178 
+	C471.000000,103.630630 471.000000,108.065979 471.000000,112.997208 
+z"/>
+<path fill="#665DA9" opacity="1.000000" stroke="none" 
+	d="
+M419.059631,136.000000 
+	C416.268768,136.000000 413.967712,136.000000 411.334656,136.000000 
+	C411.334656,123.681038 411.334656,111.662193 411.334656,99.323402 
+	C413.033295,99.323402 414.745392,99.323402 416.965851,99.323402 
+	C416.965851,109.754845 416.965851,120.127266 416.965851,130.845947 
+	C423.697357,130.845947 429.948456,130.845947 436.574646,130.845947 
+	C436.761292,132.541519 436.913696,133.925964 437.142029,136.000000 
+	C431.059326,136.000000 425.304382,136.000000 419.059631,136.000000 
+z"/>
+<path fill="#665DA9" opacity="1.000000" stroke="none" 
+	d="
+M329.628723,15.050653 
+	C329.304993,25.563549 328.652496,36.241161 328.000336,47.376083 
+	C327.363495,47.530144 326.164246,47.214314 326.170715,46.925449 
+	C326.375732,37.761570 326.604279,28.595263 327.098328,19.443846 
+	C327.176300,17.998953 328.533936,16.623129 329.628723,15.050653 
+z"/>
+<path fill="#665DA9" opacity="1.000000" stroke="none" 
+	d="
+M361.099304,74.348663 
+	C361.426331,75.309044 361.686035,76.616104 361.571716,78.052086 
+	C361.142456,77.019119 361.087250,75.857224 361.099304,74.348663 
+z"/>
+<path fill="#665DA9" opacity="1.000000" stroke="none" 
+	d="
+M366.965576,49.090736 
+	C366.814362,49.624187 366.425964,50.062927 366.037567,50.501663 
+	C365.701782,49.877811 365.365997,49.253967 365.036316,48.257965 
+	C365.604431,48.255886 366.166443,48.625957 366.965576,49.090736 
+z"/>
+<path fill="#665DA9" opacity="1.000000" stroke="none" 
+	d="
+M393.909546,52.614330 
+	C393.392700,52.839703 392.739075,52.789326 392.043610,52.452778 
+	C392.592102,52.223930 393.182404,52.281258 393.909546,52.614330 
+z"/>
+<path fill="#665DA9" opacity="1.000000" stroke="none" 
+	d="
+M350.909546,10.614340 
+	C350.392700,10.839714 349.739044,10.789339 349.043579,10.452786 
+	C349.592102,10.223936 350.182434,10.281263 350.909546,10.614340 
+z"/>
+<path fill="#665DA9" opacity="1.000000" stroke="none" 
+	d="
+M361.715759,79.987335 
+	C361.965332,80.092766 361.972290,80.296257 361.968872,80.805267 
+	C361.796661,80.768990 361.634888,80.427185 361.715759,79.987335 
+z"/>
+<path fill="#665DA9" opacity="1.000000" stroke="none" 
+	d="
+M480.012878,127.716103 
+	C479.907562,127.964935 479.703888,127.971680 479.194427,127.968353 
+	C479.230591,127.796852 479.572540,127.635429 480.012878,127.716103 
+z"/>
+<path fill="#FFFFFF" opacity="1.000000" stroke="none" 
+	d="
+M255.085358,125.000000 
+	C259.222717,125.000008 262.874176,124.953552 266.524017,125.010231 
+	C273.079468,125.112030 278.823090,130.282745 279.000000,136.174500 
+	C279.272125,145.237564 275.346985,150.331024 267.502716,150.990067 
+	C261.505951,151.493866 255.502060,151.912888 249.230270,152.390244 
+	C249.230270,142.934525 249.230270,134.225647 249.230270,125.000000 
+	C251.064865,125.000000 252.831802,125.000000 255.085358,125.000000 
+z"/>
+<path fill="#FFFFFF" opacity="1.000000" stroke="none" 
+	d="
+M393.612885,105.030991 
+	C398.863739,106.526855 399.776093,110.403236 398.840057,114.450188 
+	C397.938477,118.348198 394.655518,120.032166 390.627472,120.003761 
+	C387.663483,119.982864 384.699188,119.999657 381.369019,119.999657 
+	C381.369019,114.766685 381.369019,109.739563 381.369019,103.735519 
+	C385.298889,104.157051 389.247864,104.580627 393.612885,105.030991 
+z"/>
+</svg></a>
   <div class="fsp-badge">FSP 53986</div>
 </nav>
 
@@ -303,11 +563,71 @@
       <a href="#map" class="btn-ghost">Or see where it sits first ↓</a>
     </div>
     <div class="subbrand-strip">
-      <div class="subbrand inv"><span class="dot"></span>FR INVESTMENT</div>
-      <div class="subbrand ins"><span class="dot"></span>FR INSURANCE</div>
+      <div class="subbrand inv"><span class="dot"></span>FR PLUS INVESTMENT</div>
+      <div class="subbrand ins"><span class="dot"></span>FR PLUS INSURANCE</div>
     </div>
   </div>
   <div class="scroll-cue"><div class="line"></div>SCROLL</div>
+</section>
+
+<section class="calc-section" id="calculator">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">See the leak</div>
+      <h2 class="display">What fees and inflation<br>are quietly costing you.</h2>
+      <p>Generic math, your numbers. Not a projection on our returns, a picture of what you're currently losing.</p>
+    </div>
+    <div class="calc-panel">
+      <div>
+        <div class="field">
+          <label>Current portfolio / fixed deposit value</label>
+          <div class="slider-value" id="valOut">R 150,000</div>
+          <input type="range" id="valSlider" min="100000" max="2000000" step="25000" value="150000">
+          <div class="range-labels"><span>R100k</span><span>R2m</span></div>
+        </div>
+        <div class="field">
+          <label>Assumed annual fees + inflation drag</label>
+          <div class="slider-value" id="feeOut">4.5%</div>
+          <input type="range" id="feeSlider" min="1" max="9" step="0.5" value="4.5">
+          <div class="range-labels"><span>1%</span><span>9%</span></div>
+        </div>
+      </div>
+      <div class="output-box">
+        <div class="output-label">Over 10 years, this is</div>
+        <div class="output-value" id="leakOut">R 82,500</div>
+        <div class="output-note">of quiet erosion, before a single market downturn. Illustrative only, based on the figures above. Full details confirmed once you speak with the team.</div>
+      </div>
+    </div>
+    <div class="section-cta">
+      <a href="#apply" class="btn-primary cta-to-form">Show me what I could keep instead →</a>
+      <a href="https://invest.frplus.co.za/register" target="_blank" rel="noopener" class="btn-ghost invest-ghost">Ready to apply? Invest now →</a>
+      <div class="cta-note">60 seconds. No obligation. A plain, personalised picture from the FR Plus team.</div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="trust-section">
+  <div class="wrap">
+    <div class="trust-grid">
+      <div class="trust-block">
+        <div class="trust-label">As seen on</div>
+        <a class="seen-badge" href="https://www.instagram.com/ontbytsake/reel/DA5cBLAMkgG/" target="_blank" rel="noopener" aria-label="Watch the FR Plus interview on Ontbytsake, kykNET">
+          <span class="seen-name">ONTBYTSAKE</span><span class="seen-net">kykNET</span><span class="seen-play">▶&nbsp;Watch the interview</span>
+        </a>
+      </div>
+      <div class="trust-block">
+        <div class="trust-label">In partnership with</div>
+        <div class="trust-logos">
+          <img class="partner" src="partner-brightrock.png" alt="BrightRock" loading="lazy">
+          <img class="partner" src="partner-hexagon.png" alt="Hexagon Capital" loading="lazy">
+          <img class="partner" src="partner-kingprice.png" alt="King Price Insurance" loading="lazy">
+          <img class="partner" src="partner-reynque.png" alt="Reynque Insurance Underwriting Managers" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section class="map-section" id="map">
@@ -315,35 +635,38 @@
     <div class="section-head">
       <div class="eyebrow">Signature moment</div>
       <h2 class="display">See exactly where<br>your capital would sit.</h2>
-      <p>Not a promise on a page. Real regions, real asset categories. Hover a marker.</p>
+      <p>Not a promise on a page. Real provinces, real asset categories. Hover or tap a marker.</p>
     </div>
     <div class="map-layout">
       <div class="map-stage">
-        <svg class="sa-outline" viewBox="0 0 420 380" id="saMap">
-          <g class="sa-facets"><polygon points="60,60 180,40 260,70 340,90 380,150 350,220 300,280 220,330 140,310 80,260 40,180 30,110" /></g>
-          <g class="sa-fill">
-            <polygon points="60,60 180,40 260,70 340,90 380,150 350,220 300,280 220,330 140,310 80,260 40,180 30,110" />
-            <line x1="60" y1="60" x2="180" y2="40"/><line x1="180" y1="40" x2="260" y2="70"/>
-            <line x1="260" y1="70" x2="340" y2="90"/><line x1="340" y1="90" x2="380" y2="150"/>
-            <line x1="380" y1="150" x2="350" y2="220"/><line x1="350" y1="220" x2="300" y2="280"/>
-            <line x1="300" y1="280" x2="220" y2="330"/><line x1="220" y1="330" x2="140" y2="310"/>
-            <line x1="140" y1="310" x2="80" y2="260"/><line x1="80" y1="260" x2="40" y2="180"/>
-            <line x1="40" y1="180" x2="30" y2="110"/><line x1="30" y1="110" x2="60" y2="60"/>
+        <svg class="sa-outline" viewBox="0 0 820 721.3" id="saMap" role="img" aria-label="Map of South Africa showing FR Plus asset regions">
+          <g>
+            <path class="sa-prov" id="prov-northerncape" d="M0.0,368.9 0.9,365.7 11.1,360.0 14.1,361.3 17.5,354.0 15.1,348.8 18.6,348.6 17.5,346.0 21.6,343.2 21.7,338.3 31.5,335.0 37.4,339.5 38.4,347.3 44.2,346.0 46.8,350.1 48.2,356.2 44.4,360.4 49.3,365.9 48.6,374.1 55.9,372.1 59.9,377.1 73.4,376.5 86.8,385.1 113.8,380.3 124.1,381.8 134.9,387.7 141.8,384.1 139.0,379.6 140.5,375.4 150.4,373.3 155.3,363.2 167.8,362.0 176.8,357.2 177.1,149.6 196.5,165.1 205.4,185.3 210.9,188.7 208.8,192.8 212.1,196.7 211.1,202.1 217.9,212.5 220.4,227.7 207.5,249.3 211.5,270.6 221.9,264.9 233.6,269.3 247.1,266.4 261.7,268.5 266.2,263.9 265.3,258.9 279.2,255.7 286.3,242.3 294.7,238.3 297.7,232.5 304.2,232.6 305.5,227.9 312.0,226.6 312.4,243.0 316.7,245.3 321.8,228.2 329.8,225.2 330.8,218.8 342.7,219.4 346.2,220.3 344.5,225.3 338.6,223.4 337.8,226.0 342.4,228.0 338.1,235.3 341.0,239.2 340.3,247.3 355.9,254.8 351.6,262.0 375.3,270.6 378.6,279.9 371.6,290.8 381.0,296.7 379.3,310.5 382.7,311.9 382.1,318.2 398.9,316.4 397.4,319.7 399.3,321.2 394.9,328.4 403.2,338.2 407.4,333.2 406.6,327.6 410.8,323.7 410.9,313.1 415.6,310.8 416.7,316.2 428.9,316.3 418.4,329.7 423.8,339.2 428.0,337.6 424.8,347.9 420.5,349.4 423.5,351.9 418.2,368.7 421.7,370.3 394.2,430.0 398.6,436.0 409.8,441.1 410.4,445.3 416.3,446.6 421.6,458.4 428.3,462.9 428.5,466.8 436.0,474.9 449.8,482.0 450.6,490.9 454.0,491.7 450.3,496.0 452.4,498.0 451.6,504.1 444.2,517.2 437.3,514.9 419.5,522.3 419.6,525.1 406.3,526.5 402.0,535.8 402.3,543.8 390.8,547.3 384.8,545.9 380.1,549.7 377.6,544.0 371.2,551.3 366.7,547.0 368.5,544.5 362.3,540.6 352.8,543.9 347.5,542.5 341.9,545.3 338.3,553.5 331.5,559.3 328.5,553.6 321.7,553.5 319.4,550.6 315.5,552.5 313.3,549.3 307.4,550.5 304.6,542.3 290.8,537.4 285.3,554.4 281.3,552.8 280.9,561.5 283.7,564.0 281.4,568.8 279.9,565.5 277.0,572.2 270.6,576.3 263.5,572.5 254.2,573.6 254.6,579.0 242.4,582.2 236.2,589.4 234.9,596.2 219.3,598.2 216.8,601.0 218.8,606.8 213.7,614.2 206.5,614.1 205.0,610.9 198.9,613.9 186.3,603.2 182.6,592.7 180.9,582.7 183.7,583.8 189.4,577.3 185.5,571.1 174.1,582.0 168.3,581.1 159.7,585.8 157.6,596.2 153.4,598.7 152.3,587.8 147.4,576.8 151.4,574.4 151.3,564.9 140.9,559.4 141.0,554.1 137.8,557.7 128.3,553.4 131.6,546.2 129.8,541.6 131.5,537.3 130.9,533.5 127.3,532.7 129.1,527.9 122.2,506.0 125.6,500.4 120.8,497.2 125.0,495.7 124.6,489.4 116.8,485.0 115.1,479.4 109.9,478.7 105.7,471.7 102.6,472.5 103.6,481.5 97.6,474.8 96.1,484.4 90.8,493.5 85.8,495.3 78.0,492.0 77.3,499.2 71.7,499.8 74.0,504.3 68.4,508.9 69.4,513.8 64.8,512.0 40.9,466.0 18.2,395.5Z"/>
+            <path class="sa-prov" id="prov-westerncape" d="M65.1,512.3 68.6,512.9 67.8,508.7 73.3,504.1 71.2,499.2 76.8,498.5 77.6,491.6 90.0,493.4 95.7,484.2 96.2,472.8 101.4,477.9 102.2,471.9 106.0,471.1 110.2,478.1 115.4,478.9 117.4,484.7 125.1,489.0 125.5,496.1 122.1,497.5 126.7,500.6 122.7,505.9 124.8,517.1 128.2,520.9 128.5,531.9 131.7,533.3 132.0,537.5 131.9,548.7 129.1,552.9 138.0,556.5 141.8,552.3 140.9,558.5 152.8,565.1 152.2,574.3 148.0,577.1 153.2,587.8 153.6,597.9 157.2,595.9 159.7,585.0 168.0,580.5 173.9,581.4 186.2,570.5 190.0,578.0 183.8,584.4 181.6,583.7 183.2,592.8 186.8,603.0 199.1,613.4 205.1,610.0 207.0,613.5 213.4,613.5 218.3,606.7 216.2,600.6 219.0,597.7 234.3,595.9 235.8,589.0 241.9,581.5 254.3,578.6 253.6,573.1 261.3,574.0 263.7,571.7 270.5,575.7 276.5,571.6 277.5,566.6 280.3,564.7 281.5,567.3 282.8,564.2 280.3,561.4 280.5,552.0 284.9,553.7 290.3,536.9 305.1,541.8 307.9,544.6 307.5,550.0 313.5,548.7 315.7,551.8 319.7,549.7 321.8,552.9 328.7,553.1 331.3,558.5 337.8,553.2 341.6,544.8 347.4,541.5 352.6,543.3 362.4,540.0 368.8,544.0 371.1,550.7 374.5,543.5 379.0,543.4 380.1,548.8 385.9,549.6 382.1,554.6 387.8,557.7 382.4,564.0 383.2,568.0 371.2,575.1 364.9,570.9 360.3,574.1 359.9,580.1 349.3,579.0 347.2,582.7 343.4,580.8 338.3,584.4 342.2,595.0 340.9,598.5 346.7,603.5 345.8,607.2 335.8,604.1 331.6,605.7 332.7,609.1 327.3,610.2 324.5,614.3 324.7,621.3 313.9,636.0 316.3,640.5 341.5,638.8 356.9,644.9 360.3,655.3 354.8,654.8 347.4,661.6 352.6,661.1 362.0,666.2 359.1,672.9 346.7,675.6 347.0,680.3 325.6,679.4 305.1,673.8 301.0,676.9 284.8,678.8 282.6,682.6 285.0,684.6 274.7,687.0 272.7,693.1 268.4,695.4 253.1,694.3 241.9,698.9 222.2,695.2 219.4,701.0 201.0,701.9 177.4,721.3 170.8,717.5 159.0,718.4 147.6,708.4 142.0,709.9 145.8,704.3 141.5,697.5 134.3,698.0 129.4,693.4 118.5,696.0 118.0,684.5 119.9,682.7 115.9,678.7 100.2,680.9 100.8,694.3 96.1,689.4 93.0,682.0 95.4,677.3 92.5,676.0 97.1,667.9 101.4,667.1 99.0,656.5 82.5,630.9 76.2,625.8 74.7,621.5 78.7,621.7 78.7,618.6 71.9,619.5 69.4,607.2 75.7,599.8 80.3,604.4 84.2,603.9 92.4,593.5 94.3,576.2 91.1,554.5 82.7,536.4Z"/>
+            <path class="sa-prov" id="prov-easterncape" d="M313.2,639.4 324.2,621.1 323.9,614.0 326.9,609.6 332.1,609.0 331.0,605.4 336.0,603.6 345.4,606.6 346.0,604.0 339.9,598.5 341.7,595.0 337.6,584.2 343.2,580.0 347.0,581.9 349.0,578.4 359.7,579.5 359.9,573.6 364.8,570.2 371.1,574.5 381.3,569.3 381.4,564.1 387.1,557.9 381.5,555.1 384.4,545.4 401.8,543.3 402.2,531.8 406.1,526.0 415.7,525.4 436.8,514.2 445.2,515.9 450.8,504.6 451.8,498.3 449.6,496.1 452.9,492.7 450.1,491.2 449.6,482.0 456.2,480.1 457.3,483.9 464.4,485.7 470.6,481.2 470.4,477.5 483.2,477.3 484.3,474.0 490.6,480.1 498.7,478.9 508.1,485.9 516.3,482.9 519.3,485.4 527.5,480.8 526.2,477.1 541.7,474.4 542.8,469.3 545.9,468.9 543.3,465.5 548.9,464.4 563.3,481.0 581.5,484.7 583.5,473.2 589.0,468.5 586.0,463.5 587.6,461.4 591.1,461.1 595.8,454.8 609.1,454.5 626.5,446.7 632.0,452.4 632.7,461.2 641.1,465.0 641.2,468.6 633.4,476.4 633.4,481.1 643.1,484.5 651.4,481.7 655.9,485.6 666.3,486.2 683.2,499.1 685.5,508.4 676.2,520.7 647.3,542.9 620.2,576.4 594.7,600.5 583.0,606.4 572.3,618.9 531.8,647.0 504.2,659.7 492.3,660.9 478.3,657.3 465.8,659.4 457.2,669.2 461.5,675.8 427.2,672.5 423.1,674.6 418.2,686.2 359.1,673.0 358.2,668.8 360.8,666.1 352.8,661.8 346.1,662.0 354.3,653.7 359.8,654.7 356.5,645.4 351.2,642.5 344.7,643.5 341.3,639.4 315.4,641.1Z"/>
+            <path class="sa-prov" id="prov-freestate" d="M393.6,427.1 421.0,370.7 417.5,369.0 422.9,352.3 419.7,348.7 424.5,347.2 432.8,329.1 445.9,317.8 455.8,313.6 459.4,315.9 460.0,312.2 467.6,308.6 479.3,317.3 480.2,310.4 487.4,305.6 488.1,301.0 500.0,298.6 498.2,296.4 500.7,291.8 497.3,285.1 505.2,282.4 507.0,276.7 510.5,277.5 519.2,271.9 521.9,273.4 523.0,269.2 527.9,272.9 535.0,272.2 536.1,275.3 541.2,268.2 546.8,272.2 555.5,261.6 563.9,264.5 574.6,257.7 582.1,270.2 584.5,267.7 586.2,271.4 595.6,272.6 597.6,276.0 599.8,273.7 603.5,278.8 608.1,273.8 617.6,278.8 628.3,276.8 631.8,285.8 637.0,284.7 647.3,290.9 656.7,305.1 663.8,301.7 661.5,305.8 665.2,310.6 659.5,313.7 662.5,322.6 656.9,336.1 659.1,341.5 656.8,347.4 638.2,358.1 635.7,364.6 624.7,366.3 619.6,377.4 616.1,377.5 608.3,366.3 596.5,369.4 593.4,373.6 584.5,373.9 577.4,383.6 573.1,382.0 570.4,385.7 564.7,385.2 544.3,417.9 527.0,427.1 542.5,454.9 546.6,455.0 544.5,466.8 546.5,469.1 541.2,472.3 541.0,476.2 526.5,477.6 528.4,480.4 523.6,481.6 523.3,484.7 518.4,486.0 516.3,483.4 507.5,486.5 498.5,479.4 490.1,480.6 484.3,474.6 483.4,477.8 475.1,477.7 472.8,480.4 470.6,478.0 471.0,481.7 464.4,486.2 456.8,484.3 456.1,480.7 450.0,483.2 445.0,478.9 441.5,479.9 421.2,458.8 415.9,447.1 398.2,436.6Z"/>
+            <path class="sa-prov" id="prov-kwazulunatal" d="M619.3,377.4 624.3,365.8 635.4,364.0 638.0,357.3 656.5,346.8 658.6,341.9 656.3,336.1 661.5,322.5 659.0,313.6 664.6,309.2 660.6,303.4 665.8,302.0 667.6,298.0 679.0,297.2 682.8,299.7 693.9,291.6 697.8,295.0 711.4,292.6 717.4,296.3 721.6,293.8 723.8,297.1 730.4,295.2 733.6,297.3 739.1,290.3 750.2,294.3 773.7,294.5 775.8,265.7 784.4,268.7 820.0,268.6 809.3,305.7 803.5,340.9 795.2,363.8 776.1,383.4 763.4,388.8 742.6,412.1 728.6,434.2 728.7,440.2 719.9,450.4 703.1,482.6 685.4,508.6 681.0,497.4 665.4,487.3 655.6,486.3 651.0,482.3 643.0,485.3 634.8,483.5 631.3,479.9 640.5,465.2 632.4,461.9 630.9,451.5 626.3,446.9 633.6,442.2 630.6,438.2 633.5,428.7 639.6,426.3 641.6,422.6 640.2,417.8 645.3,415.4 648.1,409.1 641.1,394.9 638.4,395.5 626.9,384.4 624.6,385.6 622.3,377.8Z"/>
+            <path class="sa-prov" id="prov-northwest" d="M308.1,225.3 310.0,220.6 312.7,220.7 312.1,213.9 315.5,210.1 313.2,208.3 317.5,202.4 318.8,191.0 329.4,179.5 330.5,181.9 337.2,178.5 347.3,180.9 350.0,178.8 367.7,192.1 372.1,198.6 384.4,197.5 395.2,206.4 398.8,204.6 416.2,209.6 428.2,204.0 443.4,206.6 455.2,199.1 469.7,158.4 468.4,149.2 495.8,142.4 499.6,152.2 507.3,152.3 513.5,156.2 527.5,147.1 528.4,156.6 537.5,161.0 536.6,164.9 543.1,168.0 553.3,168.4 557.4,161.6 572.9,163.0 575.1,160.7 589.1,166.1 586.7,170.9 580.5,169.6 583.0,174.7 588.4,175.2 591.0,182.7 573.6,186.3 578.8,193.7 574.3,196.5 574.1,209.8 563.2,214.3 557.6,209.0 549.6,212.7 547.2,226.9 541.0,228.8 542.7,236.1 535.8,241.5 537.9,248.7 534.4,250.3 538.3,255.7 544.3,252.3 547.0,256.3 554.5,256.5 556.3,259.2 550.0,270.4 546.3,272.8 541.5,268.7 536.2,275.9 534.7,272.7 527.9,273.5 522.9,270.3 522.2,275.5 519.3,272.6 507.4,277.3 505.5,283.1 497.4,286.3 501.3,291.9 498.9,296.6 501.9,299.4 488.5,301.5 487.8,306.0 480.6,310.9 479.6,317.7 477.3,318.6 472.5,311.3 465.4,310.2 460.5,312.6 459.6,316.4 455.9,314.2 440.2,322.2 430.2,337.5 424.0,340.2 417.6,329.5 428.0,316.3 416.4,316.8 415.0,311.5 411.4,313.6 411.5,324.9 403.2,339.0 394.2,328.5 398.7,321.5 396.7,319.9 398.2,316.6 381.9,318.8 382.0,312.3 378.8,311.0 380.3,297.4 371.1,291.1 378.1,279.5 375.1,271.4 350.8,262.2 355.2,254.9 339.7,247.7 340.5,239.4 337.5,235.4 341.7,228.3 337.2,226.5 338.2,222.8 344.2,224.6 345.4,220.6 331.4,219.4 330.1,225.9 322.3,228.8 316.9,246.0 311.9,243.5 311.6,227.4Z"/>
+            <path class="sa-prov" id="prov-gauteng" d="M538.1,256.4 533.7,249.6 537.3,248.4 535.2,241.4 542.2,235.9 540.4,228.0 546.7,226.3 548.9,212.3 558.1,208.2 563.6,213.5 573.6,209.3 573.6,196.8 574.9,193.9 578.2,194.2 575.3,192.8 577.1,189.8 573.0,186.5 574.3,183.7 578.4,185.8 584.7,181.7 607.4,178.6 609.4,175.9 606.4,171.8 613.1,169.3 615.2,176.4 607.3,182.6 609.8,201.1 612.0,198.9 614.0,202.7 617.5,202.1 616.2,199.6 619.0,199.9 615.4,194.0 618.3,191.5 623.3,196.9 630.0,191.2 629.2,199.9 624.4,201.8 619.3,220.6 607.5,218.7 600.7,226.9 602.7,232.6 611.2,239.0 616.2,237.2 619.1,242.8 615.4,244.5 614.1,249.7 607.7,251.4 602.5,249.0 602.4,253.7 596.0,257.6 596.4,263.3 592.2,265.2 591.5,270.2 587.2,272.7 581.7,270.7 576.4,265.2 574.5,258.3 564.3,265.6 557.4,264.0 554.0,257.0 547.2,257.1 543.4,252.8Z"/>
+            <path class="sa-prov" id="prov-mpumalanga" d="M587.8,269.7 591.2,269.5 591.6,264.8 595.8,263.0 595.6,257.1 602.1,253.1 602.1,248.3 607.0,250.7 613.6,249.1 618.4,242.4 615.9,237.9 611.2,239.7 602.2,233.0 600.8,223.6 604.5,222.9 607.4,218.1 619.2,219.7 624.0,201.4 628.3,199.7 627.3,195.2 630.2,193.8 627.1,193.1 623.1,197.6 620.8,193.9 616.8,203.0 613.5,203.6 612.5,199.5 609.9,201.9 606.7,182.2 614.6,175.6 612.9,170.0 595.2,175.7 594.7,171.9 606.9,166.4 605.9,163.3 613.7,158.0 622.0,157.5 620.8,161.2 624.5,166.9 632.4,169.6 628.2,171.8 627.9,178.7 634.3,180.3 636.3,186.3 664.0,185.7 675.5,182.2 674.4,168.4 677.2,166.7 682.5,169.9 685.1,154.9 696.9,154.8 699.8,159.7 705.7,155.9 707.2,148.1 711.2,146.5 709.2,141.9 713.3,132.5 719.0,136.8 723.3,135.9 723.9,139.3 736.6,137.8 737.8,134.8 733.2,131.4 733.3,127.7 736.9,127.0 735.4,124.4 728.0,125.0 727.7,117.2 731.1,112.4 728.9,111.1 735.2,108.1 738.5,112.0 747.8,107.5 755.3,109.5 758.4,107.2 760.4,109.7 763.8,105.4 769.7,105.6 776.0,132.4 777.0,177.0 774.4,190.3 775.9,200.0 772.1,211.0 774.3,217.5 768.7,220.3 746.2,204.4 741.4,205.7 732.0,215.7 716.0,246.6 716.2,267.4 720.3,264.4 724.9,278.6 733.1,288.0 739.4,290.4 733.9,297.9 730.1,295.9 722.5,297.9 720.8,294.4 716.6,297.1 710.7,293.1 697.9,295.6 694.5,292.3 682.8,300.5 671.7,297.3 665.6,303.0 662.1,301.5 660.9,305.0 656.6,305.7 647.8,292.3 642.2,291.9 636.2,285.2 631.5,286.8 626.2,277.4 620.2,280.4 608.0,274.5 608.2,278.1 602.5,280.8 600.8,275.8 596.7,277.7 595.6,273.3 590.9,273.7Z"/>
+            <path class="sa-prov" id="prov-limpopo" d="M496.6,143.8 501.5,134.1 505.3,129.7 519.0,120.6 524.4,89.7 526.5,85.8 529.4,87.6 532.6,79.4 542.8,72.3 552.2,71.4 556.0,61.9 562.9,62.7 564.1,57.3 572.5,52.6 572.7,47.2 577.7,44.7 577.8,40.3 589.7,27.8 621.6,19.0 626.4,6.0 636.6,3.0 643.8,4.2 658.6,0.0 672.0,3.7 682.0,10.6 687.2,9.7 690.1,13.1 717.3,9.5 739.0,13.8 753.8,61.1 753.7,77.1 760.1,85.2 764.0,100.0 769.6,103.9 760.5,110.3 758.0,107.7 738.3,112.6 735.0,108.7 730.5,110.9 728.6,124.4 735.5,123.6 737.7,127.2 733.7,128.4 738.4,134.8 736.9,138.4 723.4,139.9 722.9,136.5 719.0,137.4 713.4,133.3 712.3,141.3 709.8,141.9 711.8,146.7 707.6,148.7 708.6,152.7 704.8,158.8 700.2,161.0 696.7,155.4 685.4,155.5 685.8,165.4 683.3,165.4 683.0,170.5 675.1,168.9 676.1,182.8 664.2,186.4 632.2,185.7 634.0,181.0 630.4,181.8 627.1,177.6 627.7,171.1 631.4,169.6 621.1,163.9 621.8,158.2 613.9,158.6 606.6,163.5 607.7,166.9 595.7,172.1 598.8,174.5 608.3,169.4 607.2,172.4 610.1,175.8 607.5,179.5 601.7,178.1 601.1,181.1 595.0,181.8 590.6,181.1 587.9,175.6 582.5,175.2 579.9,168.8 586.3,170.3 588.3,166.5 581.6,162.5 557.4,162.1 553.1,169.2 537.2,167.4 536.8,161.4 533.7,162.4 527.9,157.1 527.0,147.7 513.6,157.0 507.2,152.9 498.9,152.7Z"/>
           </g>
-          <g class="pin active" data-region="gauteng" transform="translate(220,150)"><circle class="ring" r="8"/><circle class="core" r="5"/></g>
-          <g class="pin" data-region="freestate" transform="translate(190,220)"><circle class="ring" r="8"/><circle class="core" r="5"/></g>
-          <g class="pin" data-region="mpumalanga" transform="translate(290,140)"><circle class="ring" r="8"/><circle class="core" r="5"/></g>
-          <g class="pin" data-region="westerncape" transform="translate(150,290)"><circle class="ring" r="8"/><circle class="core" r="5"/></g>
+          <g class="pin active" data-region="jhb" data-prov="prov-gauteng" transform="translate(578.3,231.6)"><circle class="ring" r="10"/><circle class="core" r="6.5"/></g>
+          <g class="pin" data-region="pta" data-prov="prov-gauteng" transform="translate(587.4,205.7)"><circle class="ring" r="10"/><circle class="core" r="6.5"/></g>
+          <g class="pin" data-region="gauteng" data-prov="prov-gauteng" transform="translate(562.0,245.6)"><circle class="ring" r="10"/><circle class="core" r="6.5"/></g>
+          <g class="pin" data-region="kzn" data-prov="prov-kwazulunatal" transform="translate(703.0,381.7)"><circle class="ring" r="10"/><circle class="core" r="6.5"/></g>
+          <g class="pin" data-region="mpumalanga" data-prov="prov-mpumalanga" transform="translate(678.1,217.2)"><circle class="ring" r="10"/><circle class="core" r="6.5"/></g>
+          <g class="pin" data-region="freestate" data-prov="prov-freestate" transform="translate(513.6,370.3)"><circle class="ring" r="10"/><circle class="core" r="6.5"/></g>
         </svg>
       </div>
       <div class="spec-card" id="specCard">
-        <div class="eyebrow">Asset region 01 / 04</div>
-        <div class="region" id="specRegion">Gauteng</div>
-        <div class="spec-row"><span class="k">Asset class</span><span class="v" id="specClass">Farmland &amp; agri-infrastructure</span></div>
-        <div class="spec-row"><span class="k">Structure</span><span class="v" id="specStruct">Asset-backed, physical title</span></div>
-        <div class="spec-row"><span class="k">Service life</span><span class="v" id="specLife">Decades, not upgrade cycles</span></div>
+        <div class="eyebrow">Asset region <span id="specIndex">01</span>&nbsp;/ 06</div>
+        <div class="region" id="specRegion">Johannesburg, Gauteng</div>
+        <div class="spec-row"><span class="k">Asset class</span><span class="v" id="specClass">Retail stores &amp; inventory</span></div>
+        <div class="spec-row"><span class="k">Structure</span><span class="v" id="specStruct">Asset-backed, physical inventory</span></div>
+        <div class="spec-row"><span class="k">Service life</span><span class="v" id="specLife">Decades</span></div>
         <div class="spec-row"><span class="k">Status</span><span class="v" id="specStatus">Active</span></div>
-        <div class="spec-hint">HOVER ANOTHER MARKER →</div>
+        <div class="spec-hint">HOVER OR TAP ANOTHER MARKER →</div>
       </div>
     </div>
   </div>
@@ -376,36 +699,52 @@
   </div>
 </section>
 
-<section>
+<section id="halo">
   <div class="wrap">
     <div class="section-head">
-      <div class="eyebrow">See the leak</div>
-      <h2 class="display">What fees and inflation<br>are quietly costing you.</h2>
-      <p>Generic math, your numbers. Not a projection on our returns, a picture of what you're currently losing.</p>
+      <div class="eyebrow">The framework</div>
+      <h2 class="display">What is a HALO asset?</h2>
+      <p>HALO stands for Heavy Asset, Low Obsolescence. It is the quality screen behind the Anchor Model: the test every asset must pass before capital is structured against it.</p>
     </div>
-    <div class="calc-panel">
+    <div class="halo-grid">
+      <div class="halo-card"><div class="halo-ghost">H</div><div class="halo-letter">H</div><h4>Hard to fake</h4><p>Physical stores, inventory, equipment and land. You can stand in front of it. It exists in the real world, not on a spreadsheet.</p></div>
+      <div class="halo-card"><div class="halo-ghost">A</div><div class="halo-letter">A</div><h4>Anchored to real value</h4><p>Capital is structured against assets with verifiable, tangible worth: titled equipment, physical inventory, productive operations.</p></div>
+      <div class="halo-card"><div class="halo-ghost">L</div><div class="halo-letter">L</div><h4>Low obsolescence</h4><p>The asset does not become technologically stranded. People will still need food, goods and working equipment in twenty years.</p></div>
+      <div class="halo-card"><div class="halo-ghost">O</div><div class="halo-letter">O</div><h4>Operator-grounded</h4><p>Run by people who operate in the real economy: stores, farms, enterprises. Operators managing assets, not screens.</p></div>
+    </div>
+  </div>
+</section>
+
+
+<section class="case-section" id="case-study">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Case study</div>
+      <h2 class="display">Real operators.<br>Real assets.</h2>
+      <p>The Anchor Model is built on people who work physical assets for a living. Here is one of them.</p>
+    </div>
+    <div class="case-card">
       <div>
-        <div class="field">
-          <label>Current portfolio / fixed deposit value</label>
-          <div class="slider-value" id="valOut">R 150,000</div>
-          <input type="range" id="valSlider" min="100000" max="2000000" step="25000" value="150000">
-          <div class="range-labels"><span>R100k</span><span>R2m</span></div>
+        <div class="case-id">
+          <div class="case-avatar">CR</div>
+          <div>
+            <div class="case-name">Chris Rossouw</div>
+            <div class="case-role">Former Springbok · Full-time farmer</div>
+          </div>
         </div>
-        <div class="field">
-          <label>Assumed annual fees + inflation drag</label>
-          <div class="slider-value" id="feeOut">4.5%</div>
-          <input type="range" id="feeSlider" min="1" max="9" step="0.5" value="4.5">
-          <div class="range-labels"><span>1%</span><span>9%</span></div>
+        <div class="case-body">
+          After a career in the Springbok jersey, <b>Chris Rossouw</b> built his second act where the Anchor Model lives: on the land. Today he farms full time, working the kind of productive, physical assets that FR Plus structures capital against. His story featured alongside FR Plus on <b>Ontbytsake</b> (kykNET), where the team unpacked what it means to hold assets you can stand on.
+        </div>
+        <div class="case-cta">
+          <a href="https://share.google/Jt2fxt2490XoF3qvi" target="_blank" rel="noopener" class="btn-ghost">▶&nbsp;Watch the Ontbytsake feature →</a>
         </div>
       </div>
-      <div class="output-box">
-        <div class="output-label">Over 10 years, this is</div>
-        <div class="output-value" id="leakOut">R 82,500</div>
-        <div class="output-note">of quiet erosion, before a single market downturn. Illustrative only, based on the figures above. Full details confirmed once you speak with the team.</div>
+      <div class="case-facts">
+        <div class="spec-row"><span class="k">Background</span><span class="v">Springbok rugby</span></div>
+        <div class="spec-row"><span class="k">Today</span><span class="v">Full-time farmer</span></div>
+        <div class="spec-row"><span class="k">Asset world</span><span class="v">Agriculture, land &amp; equipment</span></div>
+        <div class="spec-row"><span class="k">Featured on</span><span class="v">Ontbytsake · kykNET</span></div>
       </div>
-    </div>
-    <div class="section-cta">
-      <a href="#apply" class="btn-primary cta-to-form">Show me what I could keep instead →</a>
     </div>
   </div>
 </section>
@@ -428,13 +767,25 @@
   </div>
 </section>
 
+<section id="invest" style="padding-bottom:0;">
+  <div class="wrap">
+    <div class="invest-band">
+      <div>
+        <h2>Ready to invest with FR Plus?</h2>
+        <p>Complete our secure online application to begin your investment journey.</p>
+      </div>
+      <a class="btn-invest" id="investNowBtn" href="https://invest.frplus.co.za/register" target="_blank" rel="noopener">Invest Now →</a>
+    </div>
+  </div>
+</section>
+
 <section class="apply-section" id="apply">
   <div class="wrap">
     <div class="apply-grid">
       <div class="apply-copy">
         <div class="eyebrow">See where you stand</div>
         <h2 class="display">See what your capital could keep.</h2>
-        <p>Drop your details and the FR+ team will come back with a plain, personalised picture of what the Anchor Model would mean for your capital. No obligation, no pressure.</p>
+        <p>Drop your details and the FR Plus team will come back with a plain, personalised picture of what the Anchor Model would mean for your capital. No obligation, no pressure.</p>
         <div class="apply-points">
           <div class="apply-point"><span class="tick">✓</span>A clear read on what fees and drag are quietly costing you</div>
           <div class="apply-point"><span class="tick">✓</span>Where asset-backed structuring would sit for your position</div>
@@ -488,18 +839,18 @@
 
           <label class="consent">
             <input type="checkbox" name="consent" required>
-            <span>I agree that FR+ may contact me about my projection and store my details for that purpose, in line with POPIA.</span>
+            <span>I agree that FR Plus may contact me about my projection and store my details for that purpose, in line with POPIA.</span>
           </label>
 
           <button type="submit" class="form-submit" id="leadSubmit">Get my projection →</button>
           <div class="form-msg err" id="formErr"></div>
-          <div class="form-foot">No spam. Your information stays with FR+.</div>
+          <div class="form-foot">No spam. Your information stays with FR Plus.</div>
         </form>
 
         <div class="form-success" id="formSuccess">
           <div class="tickcirc">✓</div>
           <div class="big">You're in. Projection on the way.</div>
-          <p>Thank you. The FR+ team has your details and will be in touch shortly with your personalised picture. Keep an eye on your phone and inbox.</p>
+          <p>Thank you. The FR Plus team has your details and will be in touch shortly with your personalised picture. Keep an eye on your phone and inbox.</p>
         </div>
       </div>
     </div>
@@ -509,33 +860,49 @@
 <footer>
   <div class="wrap">
     <div class="footer-legal">
-      <b>Farm Rescue Plus (Pty) Ltd</b>, trading as FR Plus, is an authorised financial services provider, FSP No. 53986, in terms of Section 8 of the Financial Advisory and Intermediary Services Act, 2002. This page is for information purposes only and does not constitute financial advice or an offer to invest. All investments carry risk.
+      <b>Important Information and Risk Warning</b><br><br>
+      <b>Farm Rescue Plus (Pty) Ltd</b>, trading as FR Plus, is an authorised financial services provider, FSP No. 53986. This page is an advertisement provided for general information purposes and does not constitute financial advice, a recommendation or a prospectus.<br><br>
+      Investments involve risk. Capital, returns and distributions are not guaranteed. Investment withdrawals or redemptions are subject to applicable notice periods, contractual requirements and approval. The value of, and income generated by, underlying assets may fluctuate.<br><br>
+      Any offer of securities will be made only in accordance with the applicable registered prospectus. The prospectus, including the full terms, fees, risks and application procedures, is available by contacting <a href="mailto:info@frplus.co.za" style="text-decoration:underline;">info@frplus.co.za</a>.<br><br>
+      Prospective investors should carefully read the prospectus and obtain appropriate financial, tax and legal advice before investing.
     </div>
   </div>
 </footer>
 
 <script>
   const regions = {
-    gauteng: { name:"Gauteng", cls:"Farmland & agri-infrastructure", struct:"Asset-backed, physical title", life:"Decades, not upgrade cycles", status:"Active" },
-    freestate: { name:"Free State", cls:"Grain production infrastructure", struct:"Asset-backed, physical title", life:"Decades, not upgrade cycles", status:"Active" },
-    mpumalanga: { name:"Mpumalanga", cls:"Agricultural machinery & equipment", struct:"Asset-backed, physical title", life:"Decades, not upgrade cycles", status:"Active" },
-    westerncape: { name:"Western Cape", cls:"Farmland & processing infrastructure", struct:"Asset-backed, physical title", life:"Decades, not upgrade cycles", status:"Active" },
+    jhb:       { name:"Johannesburg, Gauteng", cls:"Retail stores & inventory", struct:"Asset-backed, physical inventory", life:"Decades", status:"Active" },
+    pta:       { name:"Pretoria, Gauteng", cls:"Retail stores & inventory", struct:"Asset-backed, physical inventory", life:"Decades", status:"Active" },
+    gauteng:   { name:"Gauteng", cls:"Small enterprises", struct:"Asset-backed & income-driven", life:"Decades", status:"Active" },
+    mpumalanga:{ name:"Mpumalanga", cls:"Agricultural machinery & equipment", struct:"Asset-backed, physical title", life:"Decades", status:"Active" },
+    kzn:       { name:"KwaZulu-Natal", cls:"Agri equipment, crop production & biological assets", struct:"Asset-backed, with physical title", life:"Decades", status:"Active" },
+    freestate: { name:"Free State", cls:"Agri equipment, machinery & crop production", struct:"Asset-backed, with physical title", life:"Decades", status:"Active" },
   };
+  const regionOrder = ['jhb','pta','gauteng','mpumalanga','kzn','freestate'];
   const pins = document.querySelectorAll('.pin');
   const specRegion = document.getElementById('specRegion');
   const specClass = document.getElementById('specClass');
   const specStruct = document.getElementById('specStruct');
   const specLife = document.getElementById('specLife');
   const specStatus = document.getElementById('specStatus');
+  const specIndex = document.getElementById('specIndex');
+  function activatePin(pin){
+    pins.forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.sa-prov').forEach(p => p.classList.remove('lit'));
+    pin.classList.add('active');
+    const prov = document.getElementById(pin.dataset.prov);
+    if(prov) prov.classList.add('lit');
+    const r = regions[pin.dataset.region];
+    specRegion.textContent = r.name; specClass.textContent = r.cls;
+    specStruct.textContent = r.struct; specLife.textContent = r.life; specStatus.textContent = r.status;
+    if(specIndex) specIndex.textContent = String(regionOrder.indexOf(pin.dataset.region)+1).padStart(2,'0');
+  }
   pins.forEach(pin => {
-    pin.addEventListener('mouseenter', () => {
-      pins.forEach(p => p.classList.remove('active'));
-      pin.classList.add('active');
-      const r = regions[pin.dataset.region];
-      specRegion.textContent = r.name; specClass.textContent = r.cls;
-      specStruct.textContent = r.struct; specLife.textContent = r.life; specStatus.textContent = r.status;
-    });
+    pin.addEventListener('mouseenter', () => activatePin(pin));
+    pin.addEventListener('click', () => activatePin(pin));
   });
+  const firstPin = document.querySelector('.pin.active');
+  if(firstPin) activatePin(firstPin);
 
   const valSlider = document.getElementById('valSlider');
   const feeSlider = document.getElementById('feeSlider');
@@ -591,6 +958,9 @@
     });
   });
 
+  // 3b. Invest Now click signal (custom event, no value implied)
+  document.querySelectorAll('#investNowBtn, .invest-ghost').forEach(el => { el.addEventListener('click', () => { if(typeof fbq === 'function'){ fbq('trackCustom','InvestNowClick'); } }); });
+
   // 4. Submit: validate, POST to /api/lead, show success, fire pixel Lead
   const leadForm = document.getElementById('leadForm');
   const leadSubmit = document.getElementById('leadSubmit');
@@ -627,7 +997,7 @@
         if(!res.ok) throw new Error('Bad response');
         leadForm.style.display = 'none';
         formSuccess.style.display = 'block';
-        if(typeof fbq === 'function'){ fbq('track','Lead',{content_name:'FR+ Anchor Model', currency:'ZAR'}); }
+        if(typeof fbq === 'function'){ fbq('track','Lead',{content_name:'FR Plus Anchor Model', currency:'ZAR'}); }
         formSuccess.scrollIntoView({behavior:'smooth', block:'center'});
       }catch(err){
         formErr.textContent = 'Something went wrong sending your details. Please try again in a moment.';
