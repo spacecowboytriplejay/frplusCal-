@@ -54,6 +54,7 @@ module.exports = async (req, res) => {
   const payload = {
     name, firstName, lastName, email, phone,
     capital_band: body.capital_band,
+    province: body.province || '',
     source: 'FR Plus Anchor Model LP',
     calc_portfolio_value: body.calc_portfolio_value || '',
     calc_fee_pct:         body.calc_fee_pct || '',
