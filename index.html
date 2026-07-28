@@ -271,7 +271,31 @@
   .case-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:52px;display:grid;grid-template-columns:1.35fr 1fr;gap:56px;box-shadow:0 24px 60px -36px rgba(75,59,124,0.28);}
   @media(max-width:860px){.case-card{grid-template-columns:1fr;padding:32px 26px;gap:36px;}}
   .case-id{display:flex;align-items:center;gap:18px;margin-bottom:26px;}
-  .case-avatar{width:64px;height:64px;border-radius:50%;background:var(--violet);color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Montserrat',sans-serif;font-weight:800;font-size:22px;letter-spacing:0.02em;flex-shrink:0;}
+  .case-avatar{width:66px;height:66px;border-radius:50%;object-fit:cover;flex-shrink:0;box-shadow:0 6px 18px -8px rgba(75,59,124,0.5);border:2px solid #fff;}
+  .case-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;}
+  @media(max-width:900px){.case-grid{grid-template-columns:1fr;}}
+  .case-quote{font-family:'Montserrat',sans-serif;font-weight:600;font-size:19px;line-height:1.4;color:var(--ink);margin:22px 0 18px;}
+  .case-ba{display:flex;gap:14px;margin:18px 0 6px;}
+  .case-ba-col{flex:1;background:var(--paper-2,#F5F3EF);border:1px solid var(--line);border-radius:10px;padding:14px 16px;}
+  .case-ba-k{font-family:'Montserrat',sans-serif;font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink-dim);margin-bottom:6px;}
+  .case-ba-v{font-family:'Montserrat',sans-serif;font-weight:600;font-size:14px;color:var(--ink);line-height:1.35;}
+  .case-ba-arrow{align-self:center;color:var(--violet);font-weight:800;}
+
+  /* OFFICE */
+  .office-wrap{margin-top:44px;padding-top:36px;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr 1.15fr;gap:36px;align-items:center;}
+  @media(max-width:820px){.office-wrap{grid-template-columns:1fr;gap:24px;}}
+  .office-copy .trust-label{margin-bottom:12px;}
+  .office-name{font-family:'Montserrat',sans-serif;font-weight:700;font-size:20px;color:var(--ink);margin-bottom:8px;}
+  .office-addr{font-size:15px;line-height:1.6;color:var(--ink-dim);}
+  .office-addr a{color:var(--violet);text-decoration:none;font-weight:600;}
+  .office-map{border-radius:12px;overflow:hidden;border:1px solid var(--line);box-shadow:0 16px 40px -28px rgba(75,59,124,0.4);line-height:0;}
+  .office-map iframe{width:100%;height:280px;border:0;display:block;}
+  @media(max-width:820px){.office-map iframe{height:220px;}}
+
+  /* WHATSAPP */
+  .wa-float{position:fixed;right:20px;bottom:20px;z-index:60;width:58px;height:58px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 28px -8px rgba(0,0,0,0.45);transition:transform .2s ease;}
+  .wa-float:hover{transform:scale(1.06);}
+  .wa-float svg{width:32px;height:32px;fill:#fff;}
   .case-name{font-family:'Montserrat',sans-serif;font-weight:700;font-size:20px;color:var(--ink);}
   .case-role{font-family:'Montserrat',sans-serif;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:var(--ink-dim);margin-top:4px;}
   .case-body{font-size:16px;line-height:1.7;color:var(--ink-dim);}
@@ -660,6 +684,19 @@ z"/>
         <img class="partner" src="partner-reynque.png" alt="Reynque Insurance Underwriting Managers" loading="lazy">
       </div>
     </div>
+    <div class="office-wrap">
+      <div class="office-copy">
+        <div class="trust-label">Where we operate</div>
+        <div class="office-name">FR Plus, Cradlestone Mall</div>
+        <div class="office-addr">
+          17 Hendrik Potgieter Road,<br>Krugersdorp, Gauteng<br><br>
+          <a href="https://www.google.com/maps/search/?api=1&query=Cradlestone+Mall,+17+Hendrik+Potgieter+Road,+Krugersdorp" target="_blank" rel="noopener">Open in Google Maps →</a>
+        </div>
+      </div>
+      <div class="office-map">
+        <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Cradlestone+Mall,+17+Hendrik+Potgieter+Road,+Krugersdorp&output=embed" title="FR Plus office location, Cradlestone Mall, Krugersdorp"></iframe>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -754,30 +791,49 @@ z"/>
     <div class="section-head">
       <div class="eyebrow">Case study</div>
       <h2 class="display">Real operators.<br>Real assets.</h2>
-      <p>The Anchor Model is built on people who work physical assets for a living. Here is one of them.</p>
+      <p>The Anchor Model is built on real people and real assets. Here are two of them.</p>
     </div>
-    <div class="case-card">
-      <div>
-        <div class="case-id">
-          <div class="case-avatar">CR</div>
-          <div>
-            <div class="case-name">Chris Rossouw</div>
-            <div class="case-role">Former Springbok · Full-time farmer</div>
+    <div class="case-grid">
+
+      <div class="case-card" style="grid-template-columns:1fr;padding:38px;">
+        <div>
+          <div class="case-id">
+            <img class="case-avatar" src="case-rossouw.png" alt="Chris Rossouw">
+            <div>
+              <div class="case-name">Chris Rossouw</div>
+              <div class="case-role">Former Springbok · Full-time farmer</div>
+            </div>
+          </div>
+          <div class="case-body">
+            After a career in the Springbok jersey, <b>Chris Rossouw</b> built his second act where the Anchor Model lives: on the land. Today he farms full time, working exactly the kind of productive, physical assets FR Plus structures capital against. His story featured alongside FR Plus on <b>Ontbytsake</b> (kykNET).
+          </div>
+          <div class="case-cta" style="margin-top:20px;">
+            <a href="https://share.google/Jt2fxt2490XoF3qvi" target="_blank" rel="noopener" class="btn-ghost">▶&nbsp;Watch the Ontbytsake feature →</a>
           </div>
         </div>
-        <div class="case-body">
-          After a career in the Springbok jersey, <b>Chris Rossouw</b> built his second act where the Anchor Model lives: on the land. Today he farms full time, working the kind of productive, physical assets that FR Plus structures capital against. His story featured alongside FR Plus on <b>Ontbytsake</b> (kykNET), where the team unpacked what it means to hold assets you can stand on.
-        </div>
-        <div class="case-cta">
-          <a href="https://share.google/Jt2fxt2490XoF3qvi" target="_blank" rel="noopener" class="btn-ghost">▶&nbsp;Watch the Ontbytsake feature →</a>
+      </div>
+
+      <div class="case-card" style="grid-template-columns:1fr;padding:38px;">
+        <div>
+          <div class="case-id">
+            <img class="case-avatar" src="case-charles.png" alt="Charles">
+            <div>
+              <div class="case-name">Charles, 35</div>
+              <div class="case-role">Key Account Manager · Centurion</div>
+            </div>
+          </div>
+          <div class="case-quote">"It gave me the freedom to finally buy the bakkie I'd wanted for years."</div>
+          <div class="case-body">
+            Charles is a husband, a father, and a key account manager in the pharmaceutical industry. Like a lot of professionals, his capital sat in standard products doing quietly ordinary things. After positioning a portion of it with <b>FR Plus</b>, the return on that investment gave him room to do something he had put off for years.
+          </div>
+          <div class="case-ba">
+            <div class="case-ba-col"><div class="case-ba-k">Before</div><div class="case-ba-v">Capital in standard products. The dream bakkie on hold.</div></div>
+            <div class="case-ba-arrow">→</div>
+            <div class="case-ba-col"><div class="case-ba-k">After</div><div class="case-ba-v">A brand-new bakkie, bought outright from the returns.</div></div>
+          </div>
         </div>
       </div>
-      <div class="case-facts">
-        <div class="spec-row"><span class="k">Background</span><span class="v">Springbok rugby</span></div>
-        <div class="spec-row"><span class="k">Today</span><span class="v">Full-time farmer</span></div>
-        <div class="spec-row"><span class="k">Asset world</span><span class="v">Agriculture, land &amp; equipment</span></div>
-        <div class="spec-row"><span class="k">Featured on</span><span class="v">Ontbytsake · kykNET</span></div>
-      </div>
+
     </div>
   </div>
 </section>
@@ -807,7 +863,10 @@ z"/>
         <h2>Ready to invest with FR Plus?</h2>
         <p>Complete our secure online application to begin your investment journey.</p>
       </div>
-      <a class="btn-invest" id="investNowBtn" href="https://invest.frplus.co.za/register" target="_blank" rel="noopener">Invest Now →</a>
+      <div style="display:flex;gap:14px;flex-wrap:wrap;align-items:center;">
+        <a class="btn-invest" id="investNowBtn" href="https://invest.frplus.co.za/register" target="_blank" rel="noopener">Invest Now →</a>
+        <a class="btn-ghost" style="color:#fff;border-color:rgba(255,255,255,0.4);" href="https://wa.me/27703745344?text=Hi%20FR%20Plus%2C%20I%27d%20like%20to%20talk%20about%20investing." target="_blank" rel="noopener" id="talkToUs">Talk to us</a>
+      </div>
     </div>
   </div>
 </section>
@@ -993,6 +1052,7 @@ z"/>
 
   // 3b. Invest Now click signal (custom event, no value implied)
   document.querySelectorAll('.media-link').forEach(el => { el.addEventListener('click', () => { if(typeof fbq === 'function'){ fbq('trackCustom','MediaInterviewClick'); } }); });
+  document.querySelectorAll('#waFloat, #talkToUs').forEach(el => { el.addEventListener('click', () => { if(typeof fbq === 'function'){ fbq('trackCustom','WhatsAppClick'); } }); });
   document.querySelectorAll('#investNowBtn, .invest-ghost').forEach(el => { el.addEventListener('click', () => { if(typeof fbq === 'function'){ fbq('trackCustom','InvestNowClick'); } }); });
 
   // 4. Submit: validate, POST to /api/lead, show success, fire pixel Lead
@@ -1042,5 +1102,6 @@ z"/>
     });
   }
 </script>
+<a class="wa-float" href="https://wa.me/27703745344?text=Hi%20FR%20Plus%2C%20I%27d%20like%20to%20know%20more%20about%20investing." target="_blank" rel="noopener" aria-label="Chat on WhatsApp" id="waFloat"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.6 6.32A7.85 7.85 0 0 0 12.05 4a7.94 7.94 0 0 0-6.9 11.9L4 20l4.2-1.1a7.9 7.9 0 0 0 3.8.97h.01a7.94 7.94 0 0 0 5.59-13.55zM12.05 18.5h-.01a6.6 6.6 0 0 1-3.36-.92l-.24-.14-2.5.65.67-2.43-.16-.25a6.59 6.59 0 1 1 5.6 3.09zm3.62-4.94c-.2-.1-1.17-.58-1.35-.64-.18-.07-.32-.1-.45.1-.13.2-.5.64-.62.77-.11.13-.23.15-.43.05a5.4 5.4 0 0 1-2.68-2.35c-.2-.35.2-.32.58-1.08.06-.13.03-.24-.02-.34-.05-.1-.45-1.08-.62-1.48-.16-.39-.33-.33-.45-.34h-.38c-.13 0-.34.05-.52.25-.18.2-.68.67-.68 1.62 0 .96.7 1.88.8 2.01.1.13 1.37 2.1 3.32 2.94.46.2.83.32 1.11.41.47.15.9.13 1.23.08.38-.06 1.17-.48 1.33-.94.17-.46.17-.85.12-.94-.05-.08-.18-.13-.38-.23z"/></svg></a>
 </body>
 </html>
