@@ -1,9 +1,10 @@
 // FR+ lead handler (Vercel serverless function).
-// Receives the landing-page form POST, forwards it to GoHighLevel,
+// Receives the landing-page form POST, forwards it to a Google Sheet via Apps Script,
 // and optionally sends a server-side Meta Conversions API event.
 //
 // Set these in Vercel > Project > Settings > Environment Variables:
-//   GHL_WEBHOOK_URL   (required)  Inbound-webhook URL from your GoHighLevel workflow trigger
+//   SHEET_WEBHOOK_URL (required)  Google Apps Script web-app URL that appends the lead to the sheet
+//                                 (GHL_WEBHOOK_URL is also accepted as a fallback name)
 //   META_PIXEL_ID     (optional)  Enables server-side Meta CAPI (recommended once the pixel is live)
 //   META_CAPI_TOKEN   (optional)  Conversions API access token, pairs with META_PIXEL_ID
 //
@@ -71,25 +72,25 @@ module.exports = async (req, res) => {
     submitted_at: body.submitted_at || new Date().toISOString()
   };
 
-  const ghlUrl = process.env.GHL_WEBHOOK_URL;
-  if(!ghlUrl){
-    console.error('GHL_WEBHOOK_URL is not set');
+  const sheetUrl = process.env.SHEET_WEBHOOK_URL || process.env.GHL_WEBHOOK_URL;
+  if(!sheetUrl){
+    console.error('SHEET_WEBHOOK_URL is not set');
     return res.status(500).json({ ok:false, error:'Lead endpoint not configured' });
   }
 
   try{
-    const ghlRes = await fetch(ghlUrl, {
+    const sheetRes = await fetch(sheetUrl, {
       method:'POST',
       headers:{ 'Content-Type':'application/json' },
       body: JSON.stringify(payload)
     });
-    if(!ghlRes.ok){
-      console.error('GHL webhook returned', ghlRes.status);
-      return res.status(502).json({ ok:false, error:'CRM rejected the lead' });
+    if(!sheetRes.ok){
+      console.error('Sheet webhook returned', sheetRes.status);
+      return res.status(502).json({ ok:false, error:'Could not record the lead' });
     }
   }catch(err){
-    console.error('GHL webhook error', err);
-    return res.status(502).json({ ok:false, error:'Could not reach CRM' });
+    console.error('Sheet webhook error', err);
+    return res.status(502).json({ ok:false, error:'Could not reach the lead store' });
   }
 
   // Optional: server-side Meta Conversions API, fires alongside the browser pixel
