@@ -1192,6 +1192,12 @@ z"/>
         formSuccess.style.display = 'block';
         if(typeof fbq === 'function'){ fbq('track','Lead',{content_name:'FR Plus Anchor Model', currency:'ZAR'}); }
         formSuccess.scrollIntoView({behavior:'smooth', block:'center'});
+        // Redirect to the next-steps page (VSL, case studies, team, reviews).
+        // The short delay gives the Meta pixel's Lead beacon time to leave
+        // before the page navigates away.
+        const firstName = (data.name || '').trim().split(/\s+/)[0] || '';
+        const nextUrl = '/next-steps' + (firstName ? ('?name=' + encodeURIComponent(firstName)) : '');
+        setTimeout(() => { window.location.href = nextUrl; }, 600);
       }catch(err){
         formErr.textContent = 'Something went wrong sending your details. Please try again in a moment.';
         formErr.style.display = 'block';
